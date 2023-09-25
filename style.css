@@ -159,7 +159,7 @@ NAVIGATION BAR
     }
 
     .nav-list-a {
-        font-size: 2em;
+        font-size: 1.3em;
     }
 
     .mobile-menu-toggle, .logo-a {
@@ -279,7 +279,18 @@ HERO SECTION
 }
 
 @media (min-width: 1750px) {
-    
+    .site-title {
+        font-size: 6.5em;
+    }
+
+    .site-sub-title {
+        font-size: 2em;
+    }
+
+    .header-social-icon {
+        height: 60px;
+    }
+
 }
 
 
@@ -333,6 +344,12 @@ CONTENT SECTION
     text-align: center;
 }
 
+@media (min-width: 1750px) {
+    .about-us-1, .about-us-2, .about-us-3, .about-us-4 {
+        font-size: 1.4em;
+    }
+}
+
 .aboutUs-requirements-gradient {
     grid-row: 2 / 3;
     grid-column: 1 / 4;
@@ -355,7 +372,7 @@ CONTENT SECTION
     height: 200px;
     grid-row: 1 / 2;
     grid-column: 4 / 5;
-    margin: auto;
+    margin: 20px auto auto auto;
 }
 
 .requirements-text {
@@ -568,6 +585,17 @@ CONTENT SECTION
     }
 }
 
+@media (min-width: 1750px) {
+    .requirements {
+        gap: 60px;
+    }
+
+    .requirements-scroll-img {
+        height: 300px;
+    }
+
+}
+
 .requirements-feeds-transition {
     grid-row: 4 / 5;
     grid-column: 1 / 4;
@@ -709,8 +737,17 @@ CONTENT SECTION
         grid-row: 3 / 4;
         grid-column: 2 / 4;
     }
+}
 
+@media (min-width: 1750px) {
+    .feeds-container {
+        grid-template-columns: 1fr 700px 700px 1fr;
+        gap: 60px;
+    }
 
+    .discord-feed {
+        width: 700px;
+    }
 
 }
 
@@ -724,7 +761,7 @@ CONTENT SECTION
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr;
     align-items: center;
-    box-shadow: 0 -1px 15px grey;
+    box-shadow: 0 -1px 15px rgb(54, 54, 54);
 }
 
 .discord-link img, .twitter-link img, .runewatch-link img {
@@ -735,7 +772,7 @@ CONTENT SECTION
 .footer-credits {
     font-family: 'Sarabun' , sans-serif;
     font-size: 0.9em;
-    padding: 5px;
+    padding: 10px;
     color: rgb(221, 221, 221);
     text-align: right;
     width: auto;
@@ -752,7 +789,7 @@ SCROLL ANIMATION FLY INS
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 2s;
+    transition: all 1s;
 }
 
 .show {
