@@ -99,7 +99,7 @@ NAVIGATION BAR
 
 
 
-@media (min-width: 50em) {
+@media (min-width: 800px) {
     .desktop-hero {
         display: block;
     }
@@ -146,6 +146,30 @@ NAVIGATION BAR
     .logo {
         height: 40px;
     }
+}
+
+
+@media (min-width: 1750px) {
+    
+
+    .nav-list-ul {
+        height: 70px;
+        width: 60%;
+        
+    }
+
+    .nav-list-a {
+        font-size: 2em;
+    }
+
+    .mobile-menu-toggle, .logo-a {
+        height: 50px;
+    }
+
+    .logo {
+        height: 50px;
+    }
+
 }
 
 /*-----------------------------------------
@@ -254,7 +278,9 @@ HERO SECTION
 
 }
 
-
+@media (min-width: 1750px) {
+    
+}
 
 
 
