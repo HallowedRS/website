@@ -120,10 +120,10 @@ NAVIGATION BAR
         align-items: center;
         position: fixed;
         top: 0px;
-        right: 0;
+        left: 70.4px;
         z-index: 9999;
         height: 60px;
-        width: 90%;
+        width: 96%;
         background-color: none;
         backdrop-filter: none;
         box-shadow: none;
@@ -151,11 +151,9 @@ NAVIGATION BAR
 
 @media (min-width: 1750px) {
     
-
     .nav-list-ul {
         height: 70px;
-        width: 60%;
-        
+        left: 78.2px;
     }
 
     .nav-list-a {
@@ -646,6 +644,10 @@ CONTENT SECTION
     height: 500px;
     display: none;
     overflow: scroll;
+}
+
+.twitter-feed::-webkit-scrollbar, .game-feed::-webkit-scrollbar {
+    display: none;
 }
 
 .twitter-disclaimer {
