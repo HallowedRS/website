@@ -860,7 +860,7 @@ HOW TO GAIN POINTS SECTION
 
 }
 
-@media (min-width: 800px) {
+@media (min-width: 900px) {
     .ways-to-gain-points-list {
         list-style-type: none;
         display: grid;
