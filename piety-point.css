@@ -271,7 +271,7 @@ MAIN CONTENT SECTION
 ------------------------------------------*/
 .main-content-area {
     display: grid;
-    grid-template-columns: 1fr 200px 200px 1fr;
+    grid-template-columns: 1fr 180px 180px 1fr;
     padding: 20px;
     text-align: center;
     margin-left: auto;
@@ -421,7 +421,7 @@ RANK SPECIFIC REWARDS SECTION
 
 .rank-specific-rewards {
     display: grid;
-    grid-template-columns: 1fr 400px 1fr;
+    grid-template-columns: 1fr 360px 1fr;
     grid-template-rows: 50px 100px 100px 100px;
     gap: 30px;
     padding-bottom: 30px;
@@ -440,7 +440,7 @@ RANK SPECIFIC REWARDS SECTION
     grid-column: 2/3;
     grid-row: 2/3;
     display: grid;
-    grid-template-columns: 100px 300px;
+    grid-template-columns: 80px 280px;
     grid-template-rows: 50px 50px;
 }
 
@@ -473,7 +473,7 @@ RANK SPECIFIC REWARDS SECTION
     grid-column: 2/3;
     grid-row: 3/4;
     display: grid;
-    grid-template-columns: 100px 300px;
+    grid-template-columns: 80px 280px;
     grid-template-rows: 50px 50px;
 }
 
@@ -504,7 +504,7 @@ RANK SPECIFIC REWARDS SECTION
     grid-column: 2/3;
     grid-row: 4/5;
     display: grid;
-    grid-template-columns: 100px 300px;
+    grid-template-columns: 80px 280px;
     grid-template-rows: 50px 50px;
 }
 
@@ -554,7 +554,7 @@ HOW TO GAIN POINTS SECTION
 .ways-to-gain-points-list {
     list-style-type: none;
     display: grid;
-    grid-template-columns: 1fr 400px 1fr;
+    grid-template-columns: 1fr 360px 1fr;
     grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
     gap: 30px;
     padding-bottom: 100px;
