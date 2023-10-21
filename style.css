@@ -100,14 +100,6 @@ NAVIGATION BAR
 
 
 @media (min-width: 800px) {
-    .desktop-hero {
-        display: block;
-    }
-
-    .mobile-hero {
-        display: none;
-    }
-
     .mobile-menu-toggle {
         display: none;
     }
@@ -245,7 +237,7 @@ HERO SECTION
     background-image: linear-gradient(hsla(0, 100%, 0%, 0), hsla(0, 100%, 0%, 1));
 }
 
-@media (min-width: 50em) {
+@media (min-width: 1000px) {
     .desktop-hero {
         display: block;
         height: 100%;
