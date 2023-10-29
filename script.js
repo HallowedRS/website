@@ -4,6 +4,8 @@
 const primaryNav = document.querySelector('.nav-list-ul');
 const navToggle = document.querySelector('.mobile-menu-toggle');
 
+var windowWidth = $(window).width();
+
 navToggle.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');
 
@@ -31,6 +33,48 @@ const hiddenElements = document.querySelectorAll('.hidden');
 hiddenElements.forEach((el) => observer.observe(el));
 
 
+
+// if (windowWidth > 1000) {
+//     // Create video element
+//     const video = document.createElement('video');
+//     video.classList.add("desktop-hero")
+//     // Use local file
+//     // video.src = 'video.mp4';
+
+//     // Use remote file
+//     video.src = '../Assets/Hallowed Site Hero.mp4';
+
+//     video.loop = true;
+//     video.muted = true;
+//     video.autoplay = true;
+    
+
+//     const box = document.getElementById('header');
+
+//     // Include in HTML as child of #box
+//     box.appendChild(video);
+
+// }
+
+if (windowWidth > 1000) {
+    // Check if 'header' element exists
+    const box = document.getElementById('header');
+    if (box) {
+        // Create video element
+        const video = document.createElement('video');
+        video.classList.add("desktop-hero");
+        
+        // Use remote file
+        video.src = '../Assets/Hallowed Site Hero.mp4';
+        
+        video.loop = true;
+        video.muted = true;
+        video.autoplay = true;
+        
+        // Include in HTML as child of #box
+        box.appendChild(video);
+    }
+}
 
 //Hide Nav Bar on scroll
 
