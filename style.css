@@ -166,16 +166,20 @@ NAVIGATION BAR
 HERO SECTION
 ------------------------------------------*/
 
-.desktop-hero {
+/* .desktop-hero {
     display: none;
-}
+} */
 
-.header {
+#header {
     display: grid;
     gap: 10px;
     height: 90vh;
     grid-template-columns: 10px 1fr 10px;
     grid-template-rows: 1fr auto auto auto 1fr 10% 1fr;
+}
+
+.desktop-hero {
+    display: none;
 }
 
 .mobile-hero {
