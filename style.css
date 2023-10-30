@@ -295,7 +295,7 @@ CONTENT SECTION
 .main-content-area {
     display: grid;
     grid-template-columns: 10px 1fr 10px;
-    grid-template-rows: auto 200px auto 200px auto;
+    grid-template-rows: auto 200px auto 75px auto 200px auto;
 }
 
 .about-us {
@@ -350,14 +350,14 @@ CONTENT SECTION
 }
 
 .requirements {
-    grid-row: 3 / 4;
+    grid-row: 5 / 6;
     grid-column: 1 / 4;
     background-color: hsla(277, 96%, 31%, 1);
     display: grid;
     gap: 10px;
     text-align: center;
     grid-template-columns: minmax(10px, 1fr) minmax(0px, 150px) minmax(0px, 150px) 150px minmax(0px, 150px) minmax(0px, 150px) minmax(10px, 1fr);
-    grid-template-rows: auto auto 150px 150px 150px 150px 20px;
+    grid-template-rows: auto auto 150px 150px 150px 150px 50px;
     font-family: 'Sarabun' , sans-serif;
 }
 
@@ -499,7 +499,7 @@ CONTENT SECTION
 @media (min-width: 360px) {
     .requirements {
         grid-template-columns: minmax(10px, 1fr) minmax(0px, 150px) 150px 150px minmax(0px, 150px) minmax(10px, 1fr);
-        grid-template-rows: auto auto 1fr 1fr 20px;
+        grid-template-rows: auto auto 1fr 1fr 50px;
     }
 
 
@@ -543,6 +543,7 @@ CONTENT SECTION
 @media (min-width: 675px) {
     .requirements {
         grid-template-columns: minmax(10px, 1fr) minmax(0px, 150px) 150px 150px minmax(0px, 150px) minmax(10px, 1fr);
+        grid-template-rows: auto auto 1fr 50px;
     }
 
     .requirements-1 {
@@ -589,8 +590,186 @@ CONTENT SECTION
 
 }
 
-.requirements-feeds-transition {
+/*-----------------------------------------
+CLAN STAFF SECTION
+------------------------------------------*/
+.requirements-staff-transition {
     grid-row: 4 / 5;
+    grid-column: 1 / 4;
+    background-color: hsla(277, 96%, 31%, 1);
+}
+
+.clan-staff {
+    grid-row: 3 / 4;
+    grid-column: 1 / 4;
+    display: grid;
+    grid-template-rows: 50px 30px 50px auto 30px 50px auto 30px 50px auto;
+    /*Title space leaderTitle leader space adminTitle admins space modTitle mods space eventHostTitle eventHosts*/
+    grid-template-columns: 1fr 50px 200px 50px 1fr;
+    background-color: hsla(277, 96%, 31%, 1);
+    text-align: center;
+    font-family: 'Sarabun' , sans-serif;
+}
+
+.clan-staff-title {
+    grid-row: 1 / 2;
+    grid-column: 2 / 5;
+    font-size: 3em;
+    margin: auto;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.staff-text {
+    font-size: 1.2em;
+    margin: auto;
+    line-height: 1.3em;
+}
+
+.staff-titles {
+    letter-spacing: 2px;
+    text-decoration: underline;
+}
+
+/*LEADER*/
+.leader-image-left {
+    grid-row: 3 / 4;
+    grid-column: 2 / 3;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.leader-image-right {
+    grid-row: 3 / 4;
+    grid-column: 4 / 5;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: 5px;
+    background-repeat: no-repeat;
+}
+
+.leader-title {
+    grid-row: 3 / 4;
+    grid-column: 3 / 4;
+    font-size: 2em;
+    margin: auto;
+}
+
+.leader-text {
+    grid-row: 4 / 5;
+    grid-column: 1 / 6;
+}
+
+/*ADMIN*/
+.admin-image-left {
+    grid-row: 6 / 7;
+    grid-column: 2 / 3;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: -45px;
+    background-repeat: no-repeat;
+}
+
+.admin-image-right {
+    grid-row: 6 / 7;
+    grid-column: 4 / 5;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: -45px;
+    background-repeat: no-repeat;
+}
+
+.admin-title {
+    grid-row: 6 / 7;
+    grid-column: 3 / 4;
+    font-size: 2em;
+    margin: auto;
+}
+
+.admin-text {
+    grid-row: 7 / 8;
+    grid-column: 1 / 6;
+}
+
+/*MOD*/
+.mod-image-left {
+    grid-row: 9 / 10;
+    grid-column: 2 / 3;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+}
+
+.mod-image-right {
+    grid-row: 9 / 10;
+    grid-column: 4 / 5;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: -100px;
+    background-repeat: no-repeat;
+}
+
+.mod-title {
+    grid-row: 9 / 10;
+    grid-column: 3 / 4;
+    font-size: 2em;
+    margin: auto;
+}
+
+.mod-text {
+    grid-row: 10 / 11;
+    grid-column: 1 / 6;
+}
+
+/*EVENT HOSTS*/
+/* .event-host-image-left {
+    grid-row: 12 / 13;
+    grid-column: 2 / 3;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+}
+
+.event-host-image-right {
+    grid-row: 12 / 13;
+    grid-column: 4 / 5;
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-size: cover;
+    background-position-y: -150px;
+    background-repeat: no-repeat;
+}
+
+.event-host-title {
+    grid-row: 12 / 13;
+    grid-column: 3 / 4;
+    font-size: 2em;
+    margin: auto;
+}
+
+.event-host-text {
+    grid-row: 13 / 14;
+    grid-column: 1 / 6;
+} */
+
+
+@media (min-width: 360px) {
+
+}
+
+/*Requirements Responsive*/
+@media (min-width: 675px) {
+
+}
+
+@media (min-width: 1750px) {
+
+}
+
+.requirements-feeds-transition {
+    grid-row: 6 / 7;
     grid-column: 1 / 4;
     display: grid;
     grid-template-columns: 1fr;
@@ -615,7 +794,7 @@ CONTENT SECTION
 }
 
 .feeds-container {
-    grid-row: 5 / 6;
+    grid-row: 7 / 8;
     grid-column: 1 / 4;
     display: grid;
     gap: 10px;
