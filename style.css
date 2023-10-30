@@ -178,9 +178,11 @@ HERO SECTION
     grid-template-rows: 1fr auto auto auto 1fr 10% 1fr;
 }
 
+.desktop-hero {
+    display: none;
+}
+
 .mobile-hero {
-    background-image: url(Assets/Video\ Frame.png);
-    background-size: cover;
     height: 100%;
     width: 100%;
     object-fit: cover;
