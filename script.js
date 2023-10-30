@@ -44,7 +44,7 @@ if (windowWidth >1000) {
     div.muted = true;
     div.autoplay = true;
     div.loop = true;
-    div.setAttribute('poster','./Assets/Video Frame.png')
+    div.setAttribute('poster','./Assets/Lassar.webp')
 
     var box = document.getElementById('header');
     box.appendChild(div)

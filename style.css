@@ -633,7 +633,7 @@ CLAN STAFF SECTION
 .leader-image-left {
     grid-row: 3 / 4;
     grid-column: 2 / 3;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: 5px;
     background-repeat: no-repeat;
@@ -642,7 +642,7 @@ CLAN STAFF SECTION
 .leader-image-right {
     grid-row: 3 / 4;
     grid-column: 4 / 5;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: 5px;
     background-repeat: no-repeat;
@@ -664,7 +664,7 @@ CLAN STAFF SECTION
 .admin-image-left {
     grid-row: 6 / 7;
     grid-column: 2 / 3;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: -45px;
     background-repeat: no-repeat;
@@ -673,7 +673,7 @@ CLAN STAFF SECTION
 .admin-image-right {
     grid-row: 6 / 7;
     grid-column: 4 / 5;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: -45px;
     background-repeat: no-repeat;
@@ -695,7 +695,7 @@ CLAN STAFF SECTION
 .mod-image-left {
     grid-row: 9 / 10;
     grid-column: 2 / 3;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: -100px;
     background-repeat: no-repeat;
@@ -704,7 +704,7 @@ CLAN STAFF SECTION
 .mod-image-right {
     grid-row: 9 / 10;
     grid-column: 4 / 5;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: -100px;
     background-repeat: no-repeat;
@@ -726,7 +726,7 @@ CLAN STAFF SECTION
 /* .event-host-image-left {
     grid-row: 12 / 13;
     grid-column: 2 / 3;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: -150px;
     background-repeat: no-repeat;
@@ -735,7 +735,7 @@ CLAN STAFF SECTION
 .event-host-image-right {
     grid-row: 12 / 13;
     grid-column: 4 / 5;
-    background-image: url(Assets/role-icons/ClanStaffRankSprite.png);
+    background-image: url(Assets/role-icons/ClanStaffRankSprite.webp);
     background-size: cover;
     background-position-y: -150px;
     background-repeat: no-repeat;
