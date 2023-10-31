@@ -1052,19 +1052,88 @@ SCROLL ANIMATION FLY INS
     transform: translateX(0);
 }
 
-
-.requirements-1 {
-    transition-delay: 200ms;
-}
-
-.requirements-2 {
-    transition-delay: 400ms;
-}
-
-.requirements-3 {
+.topaz {
     transition-delay: 100ms;
 }
 
-.requirements-4 {
-    transition-delay: 600ms;
+.sapphire {
+    transition-delay: 300ms;
 }
+
+.emerald {
+    transition-delay: 100ms;
+}
+
+.ruby {
+    transition-delay: 300ms;
+}
+
+.diamond {
+    transition-delay: 100ms;
+}
+
+.dragonstone {
+    transition-delay: 300ms;
+}
+
+.onyx {
+    transition-delay: 100ms;
+}
+
+.zenyte {
+    transition-delay: 300ms;
+}
+
+.gamer {
+    transition-delay: 100ms;
+}
+
+.infernal {
+    transition-delay: 300ms;
+}
+
+
+@media (min-width: 800px) {
+    .topaz {
+        transition-delay: 100ms;
+    }
+    
+    .sapphire {
+        transition-delay: 200ms;
+    }
+    
+    .emerald {
+        transition-delay: 300ms;
+    }
+    
+    .ruby {
+        transition-delay: 400ms;
+    }
+    
+    .diamond {
+        transition-delay: 500ms;
+    }
+    
+    .dragonstone {
+        transition-delay: 100ms;
+    }
+    
+    .onyx {
+        transition-delay: 200ms;
+    }
+    
+    .zenyte {
+        transition-delay: 300ms;
+    }
+    
+    .gamer {
+        transition-delay: 400ms;
+    }
+    
+    .infernal {
+        transition-delay: 500ms;
+    }
+}
+
+
+
