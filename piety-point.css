@@ -555,7 +555,7 @@ HOW TO GAIN POINTS SECTION
     list-style-type: none;
     display: grid;
     grid-template-columns: 1fr 360px 1fr;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px;
+    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
     gap: 30px;
     padding-bottom: 100px;
 }
@@ -856,6 +856,80 @@ HOW TO GAIN POINTS SECTION
     font-weight: bolder;
 }
 
+/*Ranks N Roles Nested Grid*/
+
+.ranks-n-roles {
+    grid-column: 2/3;
+    grid-row: 9/10;
+    background-color: black;
+    box-shadow: 8px 8px 15px black;
+    color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 35px 80px 35px;
+}
+
+.ranks-n-roles-title {
+    margin: auto;
+    font-size: 1.5em;
+}
+
+.ranks-n-roles-description {
+    margin: auto;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.ranks-n-roles-points {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgb(46, 10, 80);
+    border-radius: 0px 0px 20px 20px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
+/*Teacher Roles Nested Grid*/
+
+.teacher-roles {
+    grid-column: 2/3;
+    grid-row: 10/11;
+    background-color: black;
+    box-shadow: 8px 8px 15px black;
+    color: white;
+    border-radius: 20px;
+    display: grid;
+    grid-template-rows: 35px 80px 35px;
+}
+
+.teacher-roles-title {
+    margin: auto;
+    font-size: 1.5em;
+}
+
+.teacher-roles-description {
+    margin: auto;
+    padding: 10px;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 0.9em;
+}
+
+.teacher-roles-points {
+    font-size: 1.5em;
+    text-align: center;
+    background-color: rgb(46, 10, 80);
+    border-radius: 0px 0px 20px 20px ;
+    font-family: 'Raleway', sans-serif;
+    font-weight: bolder;
+}
+
 @media (min-width: 360px) {
 
 }
@@ -865,7 +939,7 @@ HOW TO GAIN POINTS SECTION
         list-style-type: none;
         display: grid;
         grid-template-columns: 1fr 400px 400px 1fr;
-        grid-template-rows: 150px 150px 150px 150px;
+        grid-template-rows: 150px 150px 150px 150px 150px;
     }
 
     .every-30-days {
@@ -906,6 +980,16 @@ HOW TO GAIN POINTS SECTION
     .hosting-events {
         grid-column: 3/4;
         grid-row: 4/5;
+    }
+
+    .ranks-n-roles {
+        grid-column: 2/3;
+        grid-row: 5/6;
+    }
+
+    .teacher-roles {
+        grid-column: 3/4;
+        grid-row: 5/6;
     }
 }
 
