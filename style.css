@@ -939,9 +939,13 @@ CLAN STAFF SECTION
     box-shadow: 0 -1px 15px rgb(54, 54, 54);
 }
 
-.discord-link img, .twitter-link img, .runewatch-link img {
+.discord-link img, .twitter-link img, .runewatch-link img, .wom-link img {
     height: 40px;
     margin-left: 5px;
+}
+
+.discord-link img:hover, .twitter-link img:hover, .runewatch-link img:hover, .wom-link img:hover {
+    opacity: 0.7;
 }
 
 .footer-credits {
