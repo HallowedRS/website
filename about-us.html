@@ -31,7 +31,6 @@
     </nav>
 
     <ul data-visible="false" class="nav-list-ul">
-        <!-- <a class="nav-list-a" href="member-resources.html"><li class="nav-list-li">Member Resources</li></a> -->
         <a class="nav-list-a" href="about-us.html"><li class="nav-list-li">About Us</li></a>
         <a class="nav-list-a" href="piety-points.html"><li class="nav-list-li">Piety Points</li></a>
         <a class="nav-list-a" href="bot-documentation.html"><li class="nav-list-li">Bot Documentation</li></a>
@@ -48,134 +47,163 @@
     </header>
 
     <main class="main-content-area">
-        <section class="stats-section">
+        <div class="about-us-description">
+            We're a social clan focused on meeting new people and enjoying the game, together!
+        </div>
         
+        <section class="stats-section">
+            <img class="cc-img stats-img" src="Assets/ClanChatIcon.webp" alt="Clan Member Count">
+            <div id="members-container"></div>
+            <div class="members-title">Current Members</div>
+            
+            <img class="combat-img stats-img" src="Assets/CombatIcon.webp" alt="Number of players at max combat">
+            <div id="maxcombat-container"></div>
+            <div class="combat-title">Players at Max Combat</div>
+
+            <img class="max-img stats-img" src="Assets/MaxIcon.webp" alt="Number of players maxed">
+            <div id="maxtotal-container"></div>
+            <div class="max-title">Players at Max Total Level</div>
+            
         </section>
+        <section class="time-zones-section">
+            <img src="Assets/BarChart.png" alt="Pie Chart witht the stats on time zones" class="pie-chart">
+            <div class="time-zone-disclaimer">Above time zones are taken from a voluntary sample of 175 clan members.</div>
+            <div class="clan-time-zones">
+                Hallowed RS is made up of gamers from around the world! With a near equal mix of US 
+                and UK as well as a small percentage of AUS gamers, Hallowed RS makes up people from 
+                many different time zones and stays active around the clock! <br><br>
+            </div>
+        </section>  
+        
+        <div class="gap" alt="blank div for gapping"></div>
 
         <h1 class="staff-title">Clan Staff</h1>
 
         <section class="clan-staff-section">
-            <!--LEADER-->
-            <div class="staff-member connor leader">
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">ConnorField</p>
-                    <p class="staff-role">Leader</p>
-                    <img class="leader-icon" src="Assets/role-icons/Leader.png" alt="Leader gold key">
+            <div class="leader-section"><!--LEADER-->
+                <div class="staff-member connor leader">
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name leader-name">ConnorField</p>
+                        <p class="staff-role leader-role">Leader</p>
+                        <img class="leader-icon" src="Assets/role-icons/Leader.png" alt="Leader gold key">
+                    </div>
                 </div>
             </div>
-            <!--ADMINS-->
-            <div class="staff-member">
-                <img class="staff-img" src="Assets/FozzieHead.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">F o z z i e</p>
-                    <p class="staff-role">Admin</p>
-                    <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+            <div class="admin-section"><!--ADMINS-->
+                <div class="staff-member">
+                    <img class="staff-img" src="Assets/BioPics/FozzieHead.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name admin-name">F o z z i e</p>
+                        <p class="staff-role admin-role">Admin</p>
+                        <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name admin-name">Miroh</p>
+                        <p class="staff-role admin-role">Admin</p>
+                        <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name admin-name">Purernge153</p>
+                        <p class="staff-role admin-role">Admin</p>
+                        <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+                    </div>
+                </div>
+                <div class="staff-member">
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name admin-name">Tacobell RNG</p>
+                        <p class="staff-role admin-role">Admin</p>
+                        <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+                    </div>
                 </div>
             </div>
-            <div class="staff-member">
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Miroh</p>
-                    <p class="staff-role">Admin</p>
-                    <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+            <div class="mod-section"><!--MODS-->
+                <div class="staff-member"> <!--1-->
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Alex GIM</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member">
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Purernge153</p>
-                    <p class="staff-role">Admin</p>
-                    <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+                <div class="staff-member"> <!--2-->
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Armadillos</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member">
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Tacobell RNG</p>
-                    <p class="staff-role">Admin</p>
-                    <img class="admin-icon" src="Assets/role-icons/Admin.png" alt="Admin gold star">
+                <div class="staff-member"> <!--3-->
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Captain Bad</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <!--MODS-->
-            <div class="staff-member"> <!--1-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Alex GIM</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                <div class="staff-member"> <!--4-->
+                    <img class="staff-img" src="Assets/BioPics/DailyBioPic.webp" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">DailyXP</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member"> <!--2-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Armadillos</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                <div class="staff-member"> <!--5-->
+                    <img class="staff-img" src="Assets/BioPics/MeshyBioPic.webp" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Mad Meshy</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member"> <!--3-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Captain Bad</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                <div class="staff-member"> <!--6-->
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Mathrotus</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member"> <!--4-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Daily XP</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                <div class="staff-member"> <!--7-->
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">MvM Sensei</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member"> <!--5-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Mad Meshy</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                <div class="staff-member"> <!--8-->
+                    <img class="staff-img" src="Assets/BioPics/SkizzlesBioPic.webp" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Skizzles</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member"> <!--6-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Mathrotus</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                <div class="staff-member"> <!--9-->
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Runick3</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
-            </div>
-            <div class="staff-member"> <!--7-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">MvM Sensei</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
-                </div>
-            </div>
-            <div class="staff-member"> <!--8-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Skizzles</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
-                </div>
-            </div>
-            <div class="staff-member"> <!--9-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Runick3</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
-                </div>
-            </div>
-            <div class="staff-member"> <!--10-->
-                <img class="staff-img" src="Assets/SampleBioPic.png" alt="An osrs player">
-                <div class="staff-overlay">
-                    <p class="staff-name">Alex GIM</p>
-                    <p class="staff-role">Moderator</p>
-                    <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                <div class="staff-member"> <!--10-->
+                    <img class="staff-img" src="Assets/BioPics/SampleBioPic.png" alt="An osrs player">
+                    <div class="staff-overlay">
+                        <p class="staff-name mod-name">Tz-Tok-Tired</p>
+                        <p class="staff-role mod-role">Moderator</p>
+                        <img class="mod-icon" src="Assets/role-icons/Moderator.png" alt="Moderator silver star">
+                    </div>
                 </div>
             </div>
         </section>
