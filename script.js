@@ -1,3 +1,24 @@
+async function fetchAndDisplay(url, containerId) {
+    try {
+        const response = await fetch(url);
+        if (!response.ok) {
+            throw new Error(`Network response was not ok ${response.statusText}`);
+        }
+        const text = await response.text();
+        document.getElementById(containerId).textContent = text;
+        console.log(text);
+    } catch (error) {
+        console.error('There has been a problem with your fetch operation:', error);
+    }
+}
+
+fetchAndDisplay('https://admin.hallowedrs.com:3000/maxcombat.txt', 'maxcombat-container');
+fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-container');
+fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
+
+
+
+
 
 //Mobile Menu Functionality
 

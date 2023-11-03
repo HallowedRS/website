@@ -234,6 +234,123 @@ HEADER SECTION
 /*-----------------------------------------
 DESCRIPTION SECTION
 ------------------------------------------*/
+.main-content-area {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 125px auto auto 10px 100px auto;
+    gap: 50px;
+}
+
+.about-us-description {
+    margin: auto;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+.stats-section {
+    display: grid;
+    grid-template-columns: minmax(50px, 250px) minmax(50px, 250px) minmax(50px, 250px);
+    grid-template-rows: auto auto;
+    margin: auto;
+    padding: 10px;
+}
+
+.stats-img {
+    width: 100px;
+    z-index: -1;
+    margin: auto;
+}
+
+.cc-img {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#members-container {
+    grid-column: 1/2;
+    grid-row: 1/2;
+    z-index: 2;
+    margin: auto;
+    font-size: 2.5em;
+    -webkit-text-stroke: 1px black;
+}
+
+.members-title {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.combat-img {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}
+
+#maxcombat-container {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    z-index: 2;
+    margin: auto;
+    font-size: 2.5em;
+    -webkit-text-stroke: 1px black;
+}
+
+.combat-title {
+    grid-column: 2/3;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.max-img {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#maxtotal-container {
+    grid-column: 3/4;
+    grid-row: 1/2;
+    z-index: 2;
+    margin: auto;
+    font-size: 2.5em;
+    -webkit-text-stroke: 1px black;
+}
+
+.max-title {
+    grid-column: 3/4;
+    grid-row: 2/3;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.time-zones-section {
+    display: grid;
+    grid-template-columns: minmax(100px, 750px);
+    grid-template-rows: 1fr 20px 150px;
+    margin: auto;
+}
+
+.pie-chart {
+    width: 80%;
+    margin: auto;
+}
+
+.time-zone-disclaimer {
+    font-size: 0.6em;
+    margin: auto;
+    text-align: center;
+    font-style: italic;
+    font-weight: lighter;
+}
+
+.clan-time-zones {
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+}
+
 
 
 
@@ -241,29 +358,48 @@ DESCRIPTION SECTION
 /*-----------------------------------------
 MAIN CONTENT SECTION
 ------------------------------------------*/
-.main-content-area {
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 50vh 75px auto 100vh;
-}
+
 
 .staff-title {
     text-align: center;
-    letter-spacing: 5px;
+    margin-top: auto;
+    margin-bottom: auto;
+    letter-spacing: 3px;
     font-size: 3em;
+    padding-top: 20px;
 }
 
 .clan-staff-section {
     display: grid;
-    grid-template-columns: minmax(200px, 750px) minmax(200px, 750px);
-    gap: 20px;
+    grid-template-columns: 1fr;
+    gap: 100px;
     padding: 20px;
+}
+
+.leader-section {
+    display: grid;
+    grid-template-columns: minmax(100px, 600px);
+    margin: auto;
+}
+
+.admin-section {
+    display: grid;
+    grid-template-columns: minmax(100px, 600px) minmax(100px, 600px);
+    gap: 10px;
+    margin: auto;
+}
+
+.mod-section {
+    display: grid;
+    grid-template-columns: minmax(50px, 600px) minmax(50px, 600px);
+    gap: 5px;
+    margin: auto;
 }
 
 .staff-member {
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 30%;
+    grid-template-rows: 1fr 35%;
     object-fit: fill;
     display: grid;
 }
@@ -291,15 +427,38 @@ MAIN CONTENT SECTION
 .staff-name {
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-    font-size: 15px;
     color: beige;
     letter-spacing: 1.5px;
+}
+
+.leader-name {
+    font-size: 18px;
+}
+
+.admin-name {
+    font-size: 10px
+}
+
+.mod-name {
+    font-size: 10px
 }
 
 .staff-role {
     grid-row: 2 / 3;
     grid-column: 1 / 2;
-    font-size: 12px;
+    letter-spacing: 2px;
+}
+
+.leader-role {
+    font-size: 15px;
+}
+
+.admin-role {
+    font-size: 8px;
+}
+
+.mod-role {
+    font-size: 8px;
 }
 
 .leader-icon {
@@ -321,96 +480,153 @@ MAIN CONTENT SECTION
     width: 100%;
     padding: 3px;
 }
-@media (min-width: 550px) {
-    .staff-name {
-        font-size: 18px;
+
+@media (min-width: 400px) {
+    .admin-section {
+        display: grid;
+        grid-template-columns: minmax(100px, 400px) minmax(100px, 400px);
+        gap: 10px;
     }
     
-    .staff-role {
+    .mod-section {
+        display: grid;
+        grid-template-columns: minmax(50px, 600px) minmax(50px, 600px);
+        gap: 10px;
+    }
+
+    .leader-name {
+        font-size: 30px;
+    }
+    
+    .admin-name {
+        font-size: 15px
+    }
+    
+    .mod-name {
+        font-size: 15px
+    }
+
+    .leader-role {
+        font-size: 20px;
+    }
+    
+    .admin-role {
         font-size: 13px;
+    }
+    
+    .mod-role {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 550px) {
+    .leader-name {
+        font-size: 40px;
+    }
+    
+    .admin-name {
+        font-size: 20px
+    }
+    
+    .mod-name {
+        font-size: 20px
+    }
+
+    .leader-role {
+        font-size: 30px;
+    }
+    
+    .admin-role {
+        font-size: 15px;
+    }
+    
+    .mod-role {
+        font-size: 15px;
     }
 }
 
 @media (min-width: 600px) {
-    .staff-name {
-        font-size: 20px;
+    .mod-section {
+        grid-template-columns: minmax(50px, 400px) minmax(50px, 400px) minmax(50px, 400px);
+    }
+
+    .leader-name {
+        font-size: 40px;
     }
     
-    .staff-role {
+    .admin-name {
+        font-size: 20px
+    }
+    
+    .mod-name {
+        font-size: 15px
+    }
+
+    .leader-role {
+        font-size: 30px;
+    }
+    
+    .admin-role {
         font-size: 15px;
+    }
+    
+    .mod-role {
+        font-size: 13px;
     }
 }
 
 @media (min-width: 750px) {
-    .clan-staff-section {
-        grid-template-columns: minmax(200px, 750px) minmax(200px, 750px) minmax(200px, 750px);
-    }
-
-    .staff-name {
-        font-size: 18px;
+    .admin-section {
+        gap: 20px;
     }
     
-    .staff-role {
-        font-size: 13px;
+    .mod-section {
+        gap: 10px;
+    }
+
+    .admin-name {
+        font-size: 25px
+    }
+
+    .admin-role {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 850px) {
+    .mod-name {
+        font-size: 20px
+    }
+
+    .mod-role {
+        font-size: 17px;
     }
 }
 
 @media (min-width: 950px) {
-    .staff-name {
-        font-size: 20px;
-    }
-    
-    .staff-role {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 1000px) {
-    .clan-staff-section {
-        grid-template-columns: minmax(200px, 750px) minmax(200px, 750px) minmax(200px, 750px) minmax(200px, 750px);
+    .admin-name {
+        font-size: 30px
     }
 
-    .staff-name {
-        font-size: 18px;
-    }
-    
-    .staff-role {
-        font-size: 13px;
-    }
-}
-
-@media (min-width: 1300px) {
-    .staff-name {
-        font-size: 20px;
-    }
-    
-    .staff-role {
-        font-size: 15px;
-    }
-}
-
-@media (min-width: 1600px) {
-    .staff-name {
+    .admin-role {
         font-size: 25px;
     }
-    
-    .staff-role {
+}
+
+@media (min-width: 1200px) {
+    .mod-name {
+        font-size: 25px
+    }
+
+    .mod-role {
         font-size: 20px;
     }
-}
 
-@media (min-width: 1750px) {
-    .clan-staff-section {
-        grid-template-columns: minmax(200px, 750px) minmax(200px, 750px) minmax(200px, 750px) minmax(200px, 750px) minmax(200px, 750px);
+    .admin-name {
+        font-size: 30px
     }
-}
 
-@media (min-width: 2300px) {
-    .staff-name {
-        font-size: 30px;
-    }
-    
-    .staff-role {
+    .admin-role {
         font-size: 25px;
     }
 }
