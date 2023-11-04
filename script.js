@@ -1,3 +1,5 @@
+//WOM Data Import from server
+
 async function fetchAndDisplay(url, containerId) {
     try {
         const response = await fetch(url);
@@ -17,9 +19,6 @@ fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-cont
 fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
 
 
-
-
-
 //Mobile Menu Functionality
 
 const primaryNav = document.querySelector('.nav-list-ul');
@@ -36,20 +35,35 @@ navToggle.addEventListener('click', () => {
 });
 
 
-//Animate on scroll effect
+//Animate on scroll effect From Left
 
-const observer = new IntersectionObserver((entries) => {
+const observerLeft = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         console.log(entry)
         if (entry.isIntersecting) {
-            entry.target.classList.add('show');
+            entry.target.classList.add('show-left');
         }
     });
 
 });
 
-const hiddenElements = document.querySelectorAll('.hidden');
-hiddenElements.forEach((el) => observer.observe(el));
+const hiddenElementsLeft = document.querySelectorAll('.hidden-left');
+hiddenElementsLeft.forEach((el) => observerLeft.observe(el));
+
+//Animate on scroll effect From Right
+
+const observerRight = new IntersectionObserver((entries) => {
+    entries.forEach((entry) => {
+        console.log(entry)
+        if (entry.isIntersecting) {
+            entry.target.classList.add('show-right');
+        }
+    });
+
+});
+
+const hiddenElementRight = document.querySelectorAll('.hidden-right');
+hiddenElementRight.forEach((el) => observerRight.observe(el));
 
 //Load video only on screen size parameter (hero image loads based on CSS parameter)
 
