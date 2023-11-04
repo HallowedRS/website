@@ -306,6 +306,7 @@ CONTENT SECTION
     grid-template-columns: 10px 1fr 10px;
     grid-template-rows: 0.2fr 200px 75px 75px 75px;
     font-family: 'Sarabun' , sans-serif;
+    overflow-x: hidden;
 }
 
 .about-us-1 {
@@ -359,6 +360,7 @@ CONTENT SECTION
     grid-template-columns: minmax(10px, 1fr) minmax(0px, 150px) minmax(0px, 150px) 150px minmax(0px, 150px) minmax(0px, 150px) minmax(10px, 1fr);
     grid-template-rows: auto auto 150px 150px 150px 150px 50px;
     font-family: 'Sarabun' , sans-serif;
+    overflow-x: hidden;
 }
 
 .requirements-scroll-img {

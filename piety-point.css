@@ -425,6 +425,7 @@ RANK SPECIFIC REWARDS SECTION
     grid-template-rows: 50px 100px 100px 100px;
     gap: 30px;
     padding-bottom: 30px;
+    overflow-x: hidden;
 }
 
 .rank-specific-rewards-title {
