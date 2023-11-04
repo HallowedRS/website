@@ -737,4 +737,14 @@ SCROLL ANIMATION FLY INS
     transform: translateX(0);
 }
 
+.botw-sotw {
+    transition-delay: 400ms;
+}
 
+.boss-masses {
+    transition-delay: 400ms;
+}
+
+.big-events {
+    transition-delay: 400ms;
+}
