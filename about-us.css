@@ -357,6 +357,7 @@ DESCRIPTION SECTION
     grid-template-rows: auto auto auto;
     margin: auto;
     gap: 50px;
+    overflow-x: hidden;
 }
 
 .fly-in-img {
