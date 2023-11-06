@@ -90,12 +90,14 @@ NAVIGATION BAR
     color: white;
     font-family: 'Sarabun' , sans-serif;
     font-weight: 900;
+    transition: background-color 0.3s, font-size 0.3s;
 }
 
 .nav-list-a:hover, .nav-list-a:active {
     background-color: hsla(277, 96%, 31%, 1);
-    color: rgb(255, 255, 255);
+    font-size: larger;
 }
+
 
 
 
@@ -219,16 +221,24 @@ HERO SECTION
 .header-icons {
     grid-row: 4 / 5;
     grid-column: 2 / 3;
+    display: grid;
+    grid-template-columns: 40px 40px 40px;
+    grid-template-rows: 33px;
     margin: auto;
+    gap: 10px;
 }
 
 .header-social-icon {
     height: 30px;
-    margin: 0px 3px;
+    transition: height 0.2s;
+}
+
+.header-social-icon-a {
+    margin: auto;
 }
 
 .header-social-icon:hover {
-    opacity: 0.7;
+    height:35px;
 }
 
 .header-social-icon:active {
@@ -265,8 +275,17 @@ HERO SECTION
         font-size: 1.5em;
     }
 
+    .header-icons {
+        grid-template-columns: 55px 55px 55px;
+        grid-template-rows: 50px;
+    }
+
     .header-social-icon {
         height: 40px;
+    }
+
+    .header-social-icon:hover {
+        height:50px;
     }
 
 }
@@ -280,8 +299,17 @@ HERO SECTION
         font-size: 2em;
     }
 
+    .header-icons {
+        grid-template-columns: 75px 75px 75px;
+        grid-template-rows: 70px;
+    }
+
     .header-social-icon {
         height: 60px;
+    }
+
+    .header-social-icon:hover {
+        height: 70px;
     }
 
 }
