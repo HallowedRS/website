@@ -1,4 +1,6 @@
-//WOM Data Import from server
+//----------------------------------------
+// WOM Data Import From Server
+//----------------------------------------
 
 async function fetchAndDisplay(url, containerId) {
     try {
@@ -8,7 +10,6 @@ async function fetchAndDisplay(url, containerId) {
         }
         const text = await response.text();
         document.getElementById(containerId).textContent = text;
-        console.log(text);
     } catch (error) {
         console.error('There has been a problem with your fetch operation:', error);
     }
@@ -19,7 +20,11 @@ fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-cont
 fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
 
 
-//Mobile Menu Functionality
+//----------------------------------------
+// MOBILE MENU FUNCTIONALITY
+//----------------------------------------
+
+//Main Functionality
 
 const primaryNav = document.querySelector('.nav-list-ul');
 const navToggle = document.querySelector('.mobile-menu-toggle');
@@ -34,12 +39,64 @@ navToggle.addEventListener('click', () => {
     }
 });
 
+//Close Menu On Click (almost) Anywhere else functionalities
 
-//Animate on scroll effect From Left
+const main = document.querySelector('.main-content-area');
+const headerClass = document.querySelector('.header');
+
+main.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute('data-visible');
+
+    if (visibility === "true") {
+        primaryNav.setAttribute("data-visible", false);
+    }
+});
+
+headerClass.addEventListener('click', () => {
+    const visibility = primaryNav.getAttribute('data-visible');
+
+    if (visibility === "true") {
+        primaryNav.setAttribute("data-visible", false);
+    }
+});
+
+if (document.URL.includes('piety-points.html')) {
+    const pietyDescription = document.querySelector('.description-section');
+    pietyDescription.addEventListener('click', () => {
+        const visibility = primaryNav.getAttribute('data-visible');
+    
+        if (visibility === "true") {
+            primaryNav.setAttribute("data-visible", false);
+        }
+    });
+}
+
+
+//Hide Nav Bar on scroll
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+    const visibility = primaryNav.getAttribute('data-visible');
+
+  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+    if (visibility === "true") {
+        primaryNav.setAttribute("data-visible", false);
+    }
+  } else {
+    document.getElementsByClassName("navigation").style.transform = translateY(0);
+  }
+}
+
+
+//----------------------------------------
+// Fly-in Animations On Scroll
+//----------------------------------------
+
+//From Left
 
 const observerLeft = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show-left');
         }
@@ -50,11 +107,10 @@ const observerLeft = new IntersectionObserver((entries) => {
 const hiddenElementsLeft = document.querySelectorAll('.hidden-left');
 hiddenElementsLeft.forEach((el) => observerLeft.observe(el));
 
-//Animate on scroll effect From Right
+//From Right
 
 const observerRight = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
-        console.log(entry)
         if (entry.isIntersecting) {
             entry.target.classList.add('show-right');
         }
@@ -65,7 +121,10 @@ const observerRight = new IntersectionObserver((entries) => {
 const hiddenElementRight = document.querySelectorAll('.hidden-right');
 hiddenElementRight.forEach((el) => observerRight.observe(el));
 
-//Load video only on screen size parameter (hero image loads based on CSS parameter)
+
+//----------------------------------------
+// Load Hero Video Based on Screen Size
+//----------------------------------------
 
 var windowWidth = window.innerWidth;
 
@@ -85,36 +144,3 @@ if (windowWidth >1000) {
     box.appendChild(div)
 }
 
-//Connors version
-
-// if (windowWidth > 1000) {
-//     // Check if 'header' element exists
-//     const box = document.getElementById('header');
-//     if (box) {
-//         // Create video element
-//         const video = document.createElement('video');
-//         video.classList.add("desktop-hero");
-        
-//         // Use remote file
-//         video.src = '../Assets/Hallowed Site Hero.mp4';
-        
-//         video.loop = true;
-//         video.muted = true;
-//         video.autoplay = true;
-        
-//         // Include in HTML as child of #box
-//         box.appendChild(video);
-//     }
-// }
-
-//Hide Nav Bar on scroll
-
-// window.onscroll = function() {scrollFunction()};
-
-// function scrollFunction() {
-//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-//     document.getElementsByClassName("navigation").style.transform = translateY(-100);
-//   } else {
-//     document.getElementsByClassName("navigation").style.transform = translateY(0);
-//   }
-// }
