@@ -99,11 +99,12 @@ NAVIGATION BAR
     color: white;
     font-family: 'Sarabun' , sans-serif;
     font-weight: 900;
+    transition: background-color 0.3s, font-size 0.3s;
 }
 
 .nav-list-a:hover, .nav-list-a:active {
     background-color: hsla(277, 96%, 31%, 1);
-    color: rgb(255, 255, 255);
+    font-size: larger;
 }
 
 
