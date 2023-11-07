@@ -15,10 +15,17 @@ async function fetchAndDisplay(url, containerId) {
     }
 }
 
-fetchAndDisplay('https://admin.hallowedrs.com:3000/maxcombat.txt', 'maxcombat-container');
-fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-container');
-fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
+if (document.URL.includes('about-us.html')) {
+    fetchAndDisplay('https://admin.hallowedrs.com:3000/maxcombat.txt', 'maxcombat-container');
+}
 
+if (document.URL.includes('about-us.html') || document.URL.includes('index.html')) {
+    fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
+}
+
+if (document.URL.includes('about-us.html')) {
+    fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-container');
+}
 
 //----------------------------------------
 // MOBILE MENU FUNCTIONALITY
@@ -128,19 +135,23 @@ hiddenElementRight.forEach((el) => observerRight.observe(el));
 
 var windowWidth = window.innerWidth;
 
-if (windowWidth >1000) {
+if (document.URL.includes('index.html')) {
+    if (windowWidth >1000) {
 
-    var div = document.createElement('video')
-    div.classList.add('desktop-hero')
-
-
-    div.src = './Assets/HallowedSiteHero.mp4'
-    div.muted = true;
-    div.autoplay = true;
-    div.loop = true;
-    div.setAttribute('poster','./Assets/Lassar.webp')
-
-    var box = document.getElementById('header');
-    box.appendChild(div)
+        var div = document.createElement('video')
+        div.classList.add('desktop-hero')
+    
+    
+        div.src = './Assets/HallowedSiteHero.mp4'
+        div.muted = true;
+        div.autoplay = true;
+        div.loop = true;
+        div.setAttribute('poster','./Assets/Lassar.webp')
+    
+        var box = document.getElementById('header');
+        box.appendChild(div)
+    }
 }
+
+
 
