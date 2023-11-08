@@ -33,7 +33,8 @@ if (document.URL.includes('about-us.html')) {
 
 //Main Functionality
 
-const primaryNav = document.querySelector('.nav-list-ul');
+const primaryNav = document.querySelector('.mobile-nav-list-ul');
+const primaryDiv = document.querySelector('.see-through-nav-section');
 const navToggle = document.querySelector('.mobile-menu-toggle');
 
 navToggle.addEventListener('click', () => {
@@ -41,31 +42,39 @@ navToggle.addEventListener('click', () => {
 
     if (visibility === "false") {
         primaryNav.setAttribute("data-visible", true);
+        primaryDiv.setAttribute("data-visible", true);
+        navToggle.setAttribute("data-visible", true);
     } else if (visibility === "true") {
         primaryNav.setAttribute("data-visible", false);
+        primaryDiv.setAttribute("data-visible", false);
+        navToggle.setAttribute("data-visible", false);
+
     }
 });
 
 //Close Menu On Click (almost) Anywhere else functionalities
 
-const main = document.querySelector('.main-content-area');
-const headerClass = document.querySelector('.header');
+const seeThroughNavSection = document.querySelector('.see-through-nav-section');
+// const navigation = document.querySelector('.navigation');
 
-main.addEventListener('click', () => {
+seeThroughNavSection.addEventListener('click', () => {
     const visibility = primaryNav.getAttribute('data-visible');
 
     if (visibility === "true") {
         primaryNav.setAttribute("data-visible", false);
+        primaryDiv.setAttribute("data-visible", false);
+        navToggle.setAttribute("data-visible", false);
     }
 });
 
-headerClass.addEventListener('click', () => {
-    const visibility = primaryNav.getAttribute('data-visible');
+// navigation.addEventListener('click', () => {
+//     const visibility = primaryNav.getAttribute('data-visible');
 
-    if (visibility === "true") {
-        primaryNav.setAttribute("data-visible", false);
-    }
-});
+//     if (visibility === "true") {
+//         primaryNav.setAttribute("data-visible", false);
+//         primaryDiv.setAttribute("data-visible", false);
+//     }
+// });
 
 if (document.URL.includes('piety-points.html')) {
     const pietyDescription = document.querySelector('.description-section');
@@ -81,19 +90,19 @@ if (document.URL.includes('piety-points.html')) {
 
 //Hide Nav Bar on scroll
 
-window.onscroll = function() {scrollFunction()};
+// window.onscroll = function() {scrollFunction()};
 
-function scrollFunction() {
-    const visibility = primaryNav.getAttribute('data-visible');
+// function scrollFunction() {
+//     const visibility = primaryNav.getAttribute('data-visible');
 
-  if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-    if (visibility === "true") {
-        primaryNav.setAttribute("data-visible", false);
-    }
-  } else {
-    document.getElementsByClassName("navigation").style.transform = translateY(0);
-  }
-}
+//   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+//     if (visibility === "true") {
+//         primaryNav.setAttribute("data-visible", false);
+//     }
+//   } else {
+//     document.getElementsByClassName("navigation").style.transform = translateY(0);
+//   }
+// }
 
 
 //----------------------------------------

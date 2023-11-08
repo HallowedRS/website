@@ -37,21 +37,51 @@ body {
 NAVIGATION BAR
 ------------------------------------------*/
 
-.navigation {
-    display: flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    background-color: hsla(278, 98%, 18%, 1); /*Russian Violet*/
-    box-shadow: 5px 0px 5px 3px black;
+.color-for-mobile {
+    height: 50px;
+    position: fixed;
+    top: -50px;
 }
 
-.mobile-menu-toggle, .logo-a {
+.navigation {
+    display: grid;
+    grid-template-columns: 10% 1fr 13%;
+    grid-template-rows: 50px;
+    background-color: hsla(278, 98%, 18%, 1);
+    position: sticky;
+    top: 0;
+    z-index: 11;
+    box-shadow: 5px 0px 5px 3px hsla(0, 0%, 0%, 0.7);
+}
+
+.mobile-menu-toggle {
     height: 40px;
-    margin: 10px 20px;
-    z-index: 9999;
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-image: url(Assets/HamburgerIcon.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 5px;
+    margin-right: 5px;
     cursor: pointer;
+    transition: all 200ms ease-out;
+}
+
+.mobile-menu-toggle[data-visible="true"]{
+    background-image: url(Assets/HamburgerIconClosed.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.logo-a {
+    height: 40px;
+    margin: auto;
+}
+
+.logo-a:hover {
+    height: 45px;
 }
 
 .mobile-menu-toggle:hover, .logo-a:hover {
@@ -64,42 +94,100 @@ NAVIGATION BAR
 
 .logo {
     height: 40px;
+    margin: auto;
+    transition: all 150ms ease-out;
 }
 
-.nav-list-ul {
+.logo:hover {
+    height: 45px;
+}
+
+.mobile-nav-list-ul {
     list-style-type: none;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-evenly;
-    align-items: center;
+    background-color: hsla(278, 98%, 18%, 1);
+    height: 95vh;
+    width: 75vw;
     position: fixed;
-    top: 60px;
-    right: 0;
-    height: 30vh;
-    width: 100%;
-    z-index: 999;
-    background-color: hsla(278, 98%, 18%, 0.7);
-    backdrop-filter: blur(1em);
-    box-shadow: 5px 0px 5px 3px hsla(0, 0%, 0%, 0.7);
-    transform: translateY(-140%);
-    transition: transform 450ms ease-out;
+    right: -80vw;
+    z-index: 10;
+    border: 2px solid black;
+    transition: right 450ms ease-out;
+    display: grid;
+    grid-template-columns: 10px 1fr 1fr 1fr 1fr 10px;
+    grid-template-rows: 10% 10% 10% 10% 1fr 10% 25px;
 }
 
-.nav-list-ul[data-visible="true"] {
-    transform: translateX(0%);
+.mobile-menu-img {
+    height: 50px;
+    transition: all 200ms ease-out;
+}
+
+.mobile-menu-img:hover, .mobile-menu-img:active {
+    height: 70px;
+}
+
+.mobile-menu-discord-link {
+    grid-column: 2/3;
+    grid-row: 6/7;
+    margin: auto;
+}
+.mobile-menu-twitter-link {
+    grid-column: 3/4;
+    grid-row: 6/7;
+    margin: auto;
+}
+.mobile-menu-wom-link {
+    grid-column: 4/5;
+    grid-row: 6/7;
+    margin: auto;
+}
+.mobile-menu-runewatch-link {
+    grid-column: 5/6;
+    grid-row: 6/7;
+    margin: auto;
+}
+
+.see-through-nav-section {
+    background-color: hsla(0, 0%, 0%, 0.3);
+    height: 95vh;
+    width: 25vw;
+    position: fixed;
+    left: -25vw;
+    z-index: 9;
+    transition: left 450ms ease-out;
+}
+
+.desktop-nav-list-ul {
+    display: none;
+}
+
+.mobile-nav-list-ul[data-visible="true"] {
+    position: fixed;
+    right: 0;
+}
+
+.see-through-nav-section[data-visible="true"] {
+    position: fixed;
+    left: 0vw;
 }
 
 .nav-list-a {
+    grid-column: 1/7;
     text-decoration: none;
+    color: white;
+    text-align: center;
     height: 100%;
     width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+}
+
+.nav-list-li {
+    margin: auto;
     font-family: 'Sarabun' , sans-serif;
-    font-weight: 900;
-    transition: background-color 0.3s, font-size 0.3s;
+    font-size: 1.3em;
+    transition: all 200ms ease-out;
 }
 
 .nav-list-a:hover, .nav-list-a:active {
@@ -109,52 +197,53 @@ NAVIGATION BAR
 
 
 
-@media (min-width: 800px) {
-    .desktop-hero {
-        display: block;
-    }
 
-    .mobile-hero {
+@media (min-width: 800px) {
+    .mobile-nav-list-ul {
         display: none;
     }
-
+    .see-through-nav-section {
+        display: none;
+    }
     .mobile-menu-toggle {
         display: none;
     }
 
-    .nav-list-ul {
+    .navigation {
+        display: grid;
+        grid-template-columns: 10% 1fr;
+        grid-template-rows: 50px;
+        background-color: hsla(278, 98%, 18%, 1);
+        position: static;
+        box-shadow: 5px 0px 5px 3px hsla(0, 0%, 0%, 0.7);
+    }
+
+    .desktop-nav-list-ul {
         list-style-type: none;
-        display: flex;
-        flex-flow: row;
-        justify-content: space-evenly;
-        align-items: center;
-        position: fixed;
-        top: 0px;
-        left: 70.4px;
-        z-index: 9999;
-        height: 60px;
-        width: 96%;
-        background-color: none;
-        backdrop-filter: none;
-        box-shadow: none;
-        transform: translateY(0%);
-        transition: none;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
     }
 
-    .nav-list-a {
-        font-size: 15px;
+    .nav-list-li {
+        font-size: 1em;
     }
 
-    .nav-list-a:active {
-        background-color: rgb(0, 0, 0);
+    .nav-list-li-1 {
+        grid-row: 1/2;
+        grid-column: 1/2;
     }
-
-    .mobile-menu-toggle, .logo-a {
-        height: 40px;
+    .nav-list-li-2 {
+        grid-row: 1/2;
+        grid-column: 2/3;
     }
-
-    .logo {
-        height: 40px;
+    .nav-list-li-3 {
+        grid-row: 1/2;
+        grid-column: 3/4;
+    }
+    .nav-list-li-4 {
+        grid-row: 1/2;
+        grid-column: 4/5;
     }
 }
 
@@ -176,6 +265,10 @@ NAVIGATION BAR
 
     .logo {
         height: 50px;
+    }
+
+    .navigation {
+        grid-template-rows: 60px;
     }
 
 }
