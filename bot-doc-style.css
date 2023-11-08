@@ -37,12 +37,6 @@ body {
 NAVIGATION BAR
 ------------------------------------------*/
 
-.color-for-mobile {
-    height: 50px;
-    position: fixed;
-    top: -50px;
-}
-
 .navigation {
     display: grid;
     grid-template-columns: 10% 1fr 13%;
@@ -114,7 +108,7 @@ NAVIGATION BAR
     transition: right 450ms ease-out;
     display: grid;
     grid-template-columns: 10px 1fr 1fr 1fr 1fr 10px;
-    grid-template-rows: 10% 10% 10% 10% 1fr 10% 25px;
+    grid-template-rows: 10% 10% 10% 10% 1fr 10% 1fr;
 }
 
 .mobile-menu-img {
