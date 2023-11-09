@@ -172,10 +172,6 @@ const observerVideo = new IntersectionObserver((entries) => {
 const videoLazyLoad = document.querySelectorAll('.desktop-nav-list-ul');
 videoLazyLoad.forEach((el) => observerVideo.observe(el));
 
-
-
-
-
 // var windowWidth = window.innerWidth;
 
 // if (document.URL.includes('index.html')) {
@@ -195,6 +191,10 @@ videoLazyLoad.forEach((el) => observerVideo.observe(el));
 //         box.appendChild(div)
 //     }
 // }
+
+
+
+
 
 
 
