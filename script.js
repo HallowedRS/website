@@ -147,23 +147,21 @@ var windowWidth = window.innerWidth;
 const observerVideo = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
         if (entry.isIntersecting) {
-            if (document.URL.includes('index.html')) {
-                if (windowWidth >1000) {
+            if (windowWidth >1000) {
             
-                    var div = document.createElement('video')
-                    div.classList.add('desktop-hero')
+                var div = document.createElement('video')
+                div.classList.add('desktop-hero')
                 
                 
-                    div.src = './Assets/HallowedSiteHero.mp4'
-                    div.muted = true;
-                    div.autoplay = true;
-                    div.loop = true;
-                    div.setAttribute('poster','./Assets/Lassar.webp')
+                div.src = './Assets/HallowedSiteHero.mp4'
+                div.muted = true;
+                div.autoplay = true;
+                div.loop = true;
+                div.setAttribute('poster','./Assets/Lassar.webp')
                 
-                    var box = document.getElementById('header');
-                    box.appendChild(div)
-                }
-            }
+                var box = document.getElementById('header');
+                box.appendChild(div)
+            }    
         }
     });
 
