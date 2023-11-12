@@ -15,17 +15,9 @@ async function fetchAndDisplay(url, containerId) {
     }
 }
 
-if (document.URL.includes('about-us.html')) {
-    fetchAndDisplay('https://admin.hallowedrs.com:3000/maxcombat.txt', 'maxcombat-container');
-}
-
-if (document.URL.includes('about-us.html') || document.URL.includes('index.html')) {
-    fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
-}
-
-if (document.URL.includes('about-us.html')) {
-    fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-container');
-}
+fetchAndDisplay('https://admin.hallowedrs.com:3000/maxcombat.txt', 'maxcombat-container');
+fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
+fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-container');
 
 //----------------------------------------
 // MOBILE MENU FUNCTIONALITY
