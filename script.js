@@ -3,21 +3,30 @@
 //----------------------------------------
 
 async function fetchAndDisplay(url, containerId) {
-    try {
-        const response = await fetch(url);
-        if (!response.ok) {
-            throw new Error(`Network response was not ok ${response.statusText}`);
-        }
-        const text = await response.text();
-        document.getElementById(containerId).textContent = text;
-    } catch (error) {
-        console.error('There has been a problem with your fetch operation:', error);
+  try {
+    const response = await fetch(url);
+    if (!response.ok) {
+      throw new Error(`Network response was not ok ${response.statusText}`);
     }
+    const text = await response.text();
+    document.getElementById(containerId).textContent = text;
+  } catch (error) {
+    console.error("There has been a problem with your fetch operation:", error);
+  }
 }
 
-fetchAndDisplay('https://admin.hallowedrs.com:3000/maxcombat.txt', 'maxcombat-container');
-fetchAndDisplay('https://admin.hallowedrs.com:3000/members.txt', 'members-container');
-fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-container');
+fetchAndDisplay(
+  "https://admin.hallowedrs.com:3000/maxcombat.txt",
+  "maxcombat-container",
+);
+fetchAndDisplay(
+  "https://admin.hallowedrs.com:3000/members.txt",
+  "members-container",
+);
+fetchAndDisplay(
+  "https://admin.hallowedrs.com:3000/maxtotal.txt",
+  "maxtotal-container",
+);
 
 //----------------------------------------
 // MOBILE MENU FUNCTIONALITY
@@ -25,38 +34,37 @@ fetchAndDisplay('https://admin.hallowedrs.com:3000/maxtotal.txt', 'maxtotal-cont
 
 //Main Functionality
 
-const primaryNav = document.querySelector('.mobile-nav-list-ul');
-const primaryDiv = document.querySelector('.see-through-nav-section');
-const navToggle = document.querySelector('.mobile-menu-toggle');
+const primaryNav = document.querySelector(".mobile-nav-list-ul");
+const primaryDiv = document.querySelector(".see-through-nav-section");
+const navToggle = document.querySelector(".mobile-menu-toggle");
 
-navToggle.addEventListener('click', () => {
-    const visibility = primaryNav.getAttribute('data-visible');
+navToggle.addEventListener("click", () => {
+  const visibility = primaryNav.getAttribute("data-visible");
 
-    if (visibility === "false") {
-        primaryNav.setAttribute("data-visible", true);
-        primaryDiv.setAttribute("data-visible", true);
-        navToggle.setAttribute("data-visible", true);
-    } else if (visibility === "true") {
-        primaryNav.setAttribute("data-visible", false);
-        primaryDiv.setAttribute("data-visible", false);
-        navToggle.setAttribute("data-visible", false);
-
-    }
+  if (visibility === "false") {
+    primaryNav.setAttribute("data-visible", true);
+    primaryDiv.setAttribute("data-visible", true);
+    navToggle.setAttribute("data-visible", true);
+  } else if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", false);
+    primaryDiv.setAttribute("data-visible", false);
+    navToggle.setAttribute("data-visible", false);
+  }
 });
 
 //Close Menu On Click (almost) Anywhere else functionalities
 
-const seeThroughNavSection = document.querySelector('.see-through-nav-section');
+const seeThroughNavSection = document.querySelector(".see-through-nav-section");
 // const navigation = document.querySelector('.navigation');
 
-seeThroughNavSection.addEventListener('click', () => {
-    const visibility = primaryNav.getAttribute('data-visible');
+seeThroughNavSection.addEventListener("click", () => {
+  const visibility = primaryNav.getAttribute("data-visible");
 
-    if (visibility === "true") {
-        primaryNav.setAttribute("data-visible", false);
-        primaryDiv.setAttribute("data-visible", false);
-        navToggle.setAttribute("data-visible", false);
-    }
+  if (visibility === "true") {
+    primaryNav.setAttribute("data-visible", false);
+    primaryDiv.setAttribute("data-visible", false);
+    navToggle.setAttribute("data-visible", false);
+  }
 });
 
 // navigation.addEventListener('click', () => {
@@ -68,17 +76,16 @@ seeThroughNavSection.addEventListener('click', () => {
 //     }
 // });
 
-if (document.URL.includes('piety-points.html')) {
-    const pietyDescription = document.querySelector('.description-section');
-    pietyDescription.addEventListener('click', () => {
-        const visibility = primaryNav.getAttribute('data-visible');
-    
-        if (visibility === "true") {
-            primaryNav.setAttribute("data-visible", false);
-        }
-    });
-}
+if (document.URL.includes("piety-points.html")) {
+  const pietyDescription = document.querySelector(".description-section");
+  pietyDescription.addEventListener("click", () => {
+    const visibility = primaryNav.getAttribute("data-visible");
 
+    if (visibility === "true") {
+      primaryNav.setAttribute("data-visible", false);
+    }
+  });
+}
 
 //Hide Nav Bar on scroll
 
@@ -96,7 +103,6 @@ if (document.URL.includes('piety-points.html')) {
 //   }
 // }
 
-
 //----------------------------------------
 // Fly-in Animations On Scroll
 //----------------------------------------
@@ -104,31 +110,28 @@ if (document.URL.includes('piety-points.html')) {
 //From Left
 
 const observerLeft = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show-left');
-        }
-    });
-
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-left");
+    }
+  });
 });
 
-const hiddenElementsLeft = document.querySelectorAll('.hidden-left');
+const hiddenElementsLeft = document.querySelectorAll(".hidden-left");
 hiddenElementsLeft.forEach((el) => observerLeft.observe(el));
 
 //From Right
 
 const observerRight = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('show-right');
-        }
-    });
-
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add("show-right");
+    }
+  });
 });
 
-const hiddenElementRight = document.querySelectorAll('.hidden-right');
+const hiddenElementRight = document.querySelectorAll(".hidden-right");
 hiddenElementRight.forEach((el) => observerRight.observe(el));
-
 
 //----------------------------------------
 // Load Hero Video Based on Screen Size
@@ -137,29 +140,26 @@ hiddenElementRight.forEach((el) => observerRight.observe(el));
 var windowWidth = window.innerWidth;
 
 const observerVideo = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            if (windowWidth >1000) {
-            
-                var div = document.createElement('video')
-                div.classList.add('desktop-hero')
-                
-                
-                div.src = './Assets/HallowedSiteHero.mp4'
-                div.muted = true;
-                div.autoplay = true;
-                div.loop = true;
-                div.setAttribute('poster','./Assets/Lassar.webp')
-                
-                var box = document.getElementById('header');
-                box.appendChild(div)
-            }    
-        }
-    });
+  entries.forEach((entry) => {
+    if (entry.isIntersecting) {
+      if (windowWidth > 1000) {
+        var div = document.createElement("video");
+        div.classList.add("desktop-hero");
 
+        div.src = "./Assets/HallowedSiteHero.mp4";
+        div.muted = true;
+        div.autoplay = true;
+        div.loop = true;
+        div.setAttribute("poster", "./Assets/Lassar.webp");
+
+        var box = document.getElementById("header");
+        box.appendChild(div);
+      }
+    }
+  });
 });
 
-const videoLazyLoad = document.querySelectorAll('.desktop-nav-list-ul');
+const videoLazyLoad = document.querySelectorAll(".desktop-nav-list-ul");
 videoLazyLoad.forEach((el) => observerVideo.observe(el));
 
 // var windowWidth = window.innerWidth;
@@ -169,22 +169,14 @@ videoLazyLoad.forEach((el) => observerVideo.observe(el));
 
 //         var div = document.createElement('video')
 //         div.classList.add('desktop-hero')
-    
-    
+
 //         div.src = './Assets/HallowedSiteHero.mp4'
 //         div.muted = true;
 //         div.autoplay = true;
 //         div.loop = true;
 //         div.setAttribute('poster','./Assets/Lassar.webp')
-    
+
 //         var box = document.getElementById('header');
 //         box.appendChild(div)
 //     }
 // }
-
-
-
-
-
-
-

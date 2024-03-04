@@ -18,19 +18,19 @@ GLOBAL ATTRIBUTES
 ------------------------------------------*/
 
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: 'Sarabun' , sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Sarabun", sans-serif;
 }
 
 body {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 255, 255);
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 
 .purple-text {
-    color: blueviolet;
+  color: blueviolet;
 }
 
 /*-----------------------------------------
@@ -38,233 +38,232 @@ NAVIGATION BAR
 ------------------------------------------*/
 
 .navigation {
-    display: grid;
-    grid-template-columns: 10% 1fr 13%;
-    grid-template-rows: 50px;
-    background-color: hsla(278, 98%, 18%, 1);
-    position: sticky;
-    top: 0;
-    z-index: 11;
-    box-shadow: 5px 0px 5px 3px hsla(0, 0%, 0%, 0.7);
+  display: grid;
+  grid-template-columns: 10% 1fr 13%;
+  grid-template-rows: 50px;
+  background-color: hsla(278, 98%, 18%, 1);
+  position: sticky;
+  top: 0;
+  z-index: 11;
+  box-shadow: 5px 0px 5px 3px hsla(0, 0%, 0%, 0.7);
 }
 
 .mobile-menu-toggle {
-    height: 40px;
-    grid-column: 3/4;
-    grid-row: 1/2;
-    background-image: url(Assets/HamburgerIcon.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 5px;
-    margin-right: 5px;
-    cursor: pointer;
-    transition: all 200ms ease-out;
+  height: 40px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  background-image: url(Assets/HamburgerIcon.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-top: 5px;
+  margin-right: 5px;
+  cursor: pointer;
+  transition: all 200ms ease-out;
 }
 
-.mobile-menu-toggle[data-visible="true"]{
-    background-image: url(Assets/HamburgerIconClosed.webp);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
+.mobile-menu-toggle[data-visible="true"] {
+  background-image: url(Assets/HamburgerIconClosed.webp);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .logo-a {
-    height: 40px;
-    margin: auto;
+  height: 40px;
+  margin: auto;
 }
 
 .logo-a:hover {
-    height: 45px;
+  height: 45px;
 }
 
-.mobile-menu-toggle:hover, .logo-a:hover {
-    opacity: 0.7;
+.mobile-menu-toggle:hover,
+.logo-a:hover {
+  opacity: 0.7;
 }
 
-.mobile-menu-toggle:active, .logo-a:active {
-    opacity: 0.3;
+.mobile-menu-toggle:active,
+.logo-a:active {
+  opacity: 0.3;
 }
 
 .logo {
-    height: 40px;
-    margin: auto;
-    transition: all 150ms ease-out;
+  height: 40px;
+  margin: auto;
+  transition: all 150ms ease-out;
 }
 
 .logo:hover {
-    height: 45px;
+  height: 45px;
 }
 
 .mobile-nav-list-ul {
-    list-style-type: none;
-    background-color: hsla(278, 98%, 18%, 1);
-    height: 95vh;
-    width: 75vw;
-    position: fixed;
-    right: -80vw;
-    z-index: 10;
-    border: 2px solid black;
-    transition: right 450ms ease-out;
-    display: grid;
-    grid-template-columns: 10px 1fr 1fr 1fr 1fr 10px;
-    grid-template-rows: 10% 10% 10% 10% 1fr 10% 1fr;
+  list-style-type: none;
+  background-color: hsla(278, 98%, 18%, 1);
+  height: 95vh;
+  width: 75vw;
+  position: fixed;
+  right: -80vw;
+  z-index: 10;
+  border: 2px solid black;
+  transition: right 450ms ease-out;
+  display: grid;
+  grid-template-columns: 10px 1fr 1fr 1fr 1fr 10px;
+  grid-template-rows: 10% 10% 10% 10% 1fr 10% 1fr;
 }
 
 .mobile-menu-img {
-    height: 50px;
-    transition: all 200ms ease-out;
+  height: 50px;
+  transition: all 200ms ease-out;
 }
 
-.mobile-menu-img:hover, .mobile-menu-img:active {
-    height: 70px;
+.mobile-menu-img:hover,
+.mobile-menu-img:active {
+  height: 70px;
 }
 
 .mobile-menu-discord-link {
-    grid-column: 2/3;
-    grid-row: 6/7;
-    margin: auto;
+  grid-column: 2/3;
+  grid-row: 6/7;
+  margin: auto;
 }
 .mobile-menu-twitter-link {
-    grid-column: 3/4;
-    grid-row: 6/7;
-    margin: auto;
+  grid-column: 3/4;
+  grid-row: 6/7;
+  margin: auto;
 }
 .mobile-menu-wom-link {
-    grid-column: 4/5;
-    grid-row: 6/7;
-    margin: auto;
+  grid-column: 4/5;
+  grid-row: 6/7;
+  margin: auto;
 }
 .mobile-menu-runewatch-link {
-    grid-column: 5/6;
-    grid-row: 6/7;
-    margin: auto;
+  grid-column: 5/6;
+  grid-row: 6/7;
+  margin: auto;
 }
 
 .see-through-nav-section {
-    background-color: hsla(0, 0%, 0%, 0.3);
-    height: 95vh;
-    width: 25vw;
-    position: fixed;
-    left: -25vw;
-    z-index: 9;
-    transition: left 450ms ease-out;
+  background-color: hsla(0, 0%, 0%, 0.3);
+  height: 95vh;
+  width: 25vw;
+  position: fixed;
+  left: -25vw;
+  z-index: 9;
+  transition: left 450ms ease-out;
 }
 
 .desktop-nav-list-ul {
-    display: none;
+  display: none;
 }
 
 .mobile-nav-list-ul[data-visible="true"] {
-    position: fixed;
-    right: 0;
+  position: fixed;
+  right: 0;
 }
 
 .see-through-nav-section[data-visible="true"] {
-    position: fixed;
-    left: 0vw;
+  position: fixed;
+  left: 0vw;
 }
 
 .nav-list-a {
-    grid-column: 1/7;
-    text-decoration: none;
-    color: white;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+  grid-column: 1/7;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr;
 }
 
 .nav-list-li {
-    margin: auto;
-    font-family: 'Sarabun' , sans-serif;
-    font-size: 1.3em;
-    transition: all 200ms ease-out;
+  margin: auto;
+  font-family: "Sarabun", sans-serif;
+  font-size: 1.3em;
+  transition: all 200ms ease-out;
 }
 
-.nav-list-a:hover, .nav-list-a:active {
-    background-color: hsla(277, 96%, 31%, 1);
-    font-size: larger;
+.nav-list-a:hover,
+.nav-list-a:active {
+  background-color: hsla(277, 96%, 31%, 1);
+  font-size: larger;
 }
-
-
-
 
 @media (min-width: 800px) {
-    .mobile-nav-list-ul {
-        display: none;
-    }
-    .see-through-nav-section {
-        display: none;
-    }
-    .mobile-menu-toggle {
-        display: none;
-    }
+  .mobile-nav-list-ul {
+    display: none;
+  }
+  .see-through-nav-section {
+    display: none;
+  }
+  .mobile-menu-toggle {
+    display: none;
+  }
 
-    .navigation {
-        display: grid;
-        grid-template-columns: 10% 1fr;
-        grid-template-rows: 50px;
-        background-color: hsla(278, 98%, 18%, 1);
-        position: static;
-        box-shadow: 5px 0px 5px 3px hsla(0, 0%, 0%, 0.7);
-    }
+  .navigation {
+    display: grid;
+    grid-template-columns: 10% 1fr;
+    grid-template-rows: 50px;
+    background-color: hsla(278, 98%, 18%, 1);
+    position: static;
+    box-shadow: 5px 0px 5px 3px hsla(0, 0%, 0%, 0.7);
+  }
 
-    .desktop-nav-list-ul {
-        list-style-type: none;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        grid-template-rows: 1fr;
-    }
+  .desktop-nav-list-ul {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+  }
 
-    .nav-list-li {
-        font-size: 1em;
-    }
+  .nav-list-li {
+    font-size: 1em;
+  }
 
-    .nav-list-li-1 {
-        grid-row: 1/2;
-        grid-column: 1/2;
-    }
-    .nav-list-li-2 {
-        grid-row: 1/2;
-        grid-column: 2/3;
-    }
-    .nav-list-li-3 {
-        grid-row: 1/2;
-        grid-column: 3/4;
-    }
-    .nav-list-li-4 {
-        grid-row: 1/2;
-        grid-column: 4/5;
-    }
+  .nav-list-li-1 {
+    grid-row: 1/2;
+    grid-column: 1/2;
+  }
+  .nav-list-li-2 {
+    grid-row: 1/2;
+    grid-column: 2/3;
+  }
+  .nav-list-li-3 {
+    grid-row: 1/2;
+    grid-column: 3/4;
+  }
+  .nav-list-li-4 {
+    grid-row: 1/2;
+    grid-column: 4/5;
+  }
 }
 
-
 @media (min-width: 1750px) {
-    
-    .nav-list-ul {
-        height: 70px;
-        left: 78.2px;
-    }
+  .nav-list-ul {
+    height: 70px;
+    left: 78.2px;
+  }
 
-    .nav-list-a {
-        font-size: 1.3em;
-    }
+  .nav-list-a {
+    font-size: 1.3em;
+  }
 
-    .mobile-menu-toggle, .logo-a {
-        height: 50px;
-    }
+  .mobile-menu-toggle,
+  .logo-a {
+    height: 50px;
+  }
 
-    .logo {
-        height: 50px;
-    }
+  .logo {
+    height: 50px;
+  }
 
-    .navigation {
-        grid-template-rows: 60px;
-    }
-
+  .navigation {
+    grid-template-rows: 60px;
+  }
 }
 
 /*-----------------------------------------
@@ -272,235 +271,228 @@ HEADER SECTION
 ------------------------------------------*/
 
 .header {
-    height: 40vh;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+  height: 40vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
 }
 
 .bot-doc-title {
-    /* background-color: red; */
-    grid-column: 1/2;
-    grid-row: 2/3;
-    align-self: center;
-    text-align: center;
-    color: blueviolet;
-    font-size: 5em;
-    -webkit-text-stroke: 2px black;
-    line-height: 1;
+  /* background-color: red; */
+  grid-column: 1/2;
+  grid-row: 2/3;
+  align-self: center;
+  text-align: center;
+  color: blueviolet;
+  font-size: 5em;
+  -webkit-text-stroke: 2px black;
+  line-height: 1;
 }
 
 .bot-doc-hero {
-    grid-column: 1/2;
-    grid-row: 1/4;
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-    z-index: -1;
-    opacity: 0.6;
+  grid-column: 1/2;
+  grid-row: 1/4;
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.6;
 }
 
 @media (min-width: 50em) {
-    .header {
-        height: 50vh;
-    }
+  .header {
+    height: 50vh;
+  }
 
-    .bot-doc-title {
-        font-size: 6em;
-    }
-
+  .bot-doc-title {
+    font-size: 6em;
+  }
 }
 
 @media (min-width: 1750px) {
-    
-    .bot-doc-title {
-        font-size: 7em;
-    }
+  .bot-doc-title {
+    font-size: 7em;
+  }
 }
-
 
 /*-----------------------------------------
 DESCRIPTION SECTION
 ------------------------------------------*/
 
 .description-section {
-    display: grid;
-    grid-template-columns: 10px 1fr 10px;
-    grid-template-rows: 50px 1fr 20px;
+  display: grid;
+  grid-template-columns: 10px 1fr 10px;
+  grid-template-rows: 50px 1fr 20px;
 }
 
 .bot-doc-description {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    align-self: center;
-    text-align: center;
-    margin: 20px;
-    color: beige;
-    font-weight: lighter;
-    letter-spacing: 0.05em;
-    font-size: 1em;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  align-self: center;
+  text-align: center;
+  margin: 20px;
+  color: beige;
+  font-weight: lighter;
+  letter-spacing: 0.05em;
+  font-size: 1em;
 }
 
 @media (min-width: 50em) {
-    .bot-doc-description {
-        font-size: 1.3em;
-    }
+  .bot-doc-description {
+    font-size: 1.3em;
+  }
 }
 
 @media (min-width: 1750px) {
-    .bot-doc-description {
-        font-size: 1.5em;
-    }
+  .bot-doc-description {
+    font-size: 1.5em;
+  }
 }
-
 
 /*-----------------------------------------
 MAIN CONTENT SECTION
 ------------------------------------------*/
 .main-content-area {
-    display: grid;
-    grid-template-columns: 1fr 180px 180px 1fr;
-    padding: 20px;
-    text-align: center;
-    margin-left: auto;
-    margin-right: auto;
+  display: grid;
+  grid-template-columns: 1fr 180px 180px 1fr;
+  padding: 20px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .rank-img {
-    max-height: 150px;
+  max-height: 150px;
 }
 
 .rank-img:hover {
-    opacity: 0.8;
+  opacity: 0.8;
 }
 
 .topaz {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-bottom: 50px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-bottom: 50px;
 }
 
 .sapphire {
-    grid-column: 3/4;
-    grid-row: 1/2;
-    margin-bottom: 50px;
+  grid-column: 3/4;
+  grid-row: 1/2;
+  margin-bottom: 50px;
 }
 
 .emerald {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-bottom: 50px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-bottom: 50px;
 }
 
 .ruby {
-    grid-column: 3/4;
-    grid-row: 2/3;
-    margin-bottom: 50px;
+  grid-column: 3/4;
+  grid-row: 2/3;
+  margin-bottom: 50px;
 }
 
 .diamond {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    margin-bottom: 50px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  margin-bottom: 50px;
 }
 
 .dragonstone {
-    grid-column: 3/4;
-    grid-row: 3/4;
-    margin-bottom: 50px;
+  grid-column: 3/4;
+  grid-row: 3/4;
+  margin-bottom: 50px;
 }
 
 .onyx {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    margin-bottom: 50px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  margin-bottom: 50px;
 }
 
 .zenyte {
-    grid-column: 3/4;
-    grid-row: 4/5;
-    margin-bottom: 50px;
+  grid-column: 3/4;
+  grid-row: 4/5;
+  margin-bottom: 50px;
 }
 
 .gamer {
-    grid-column: 2/3;
-    grid-row: 5/6;
-    margin-bottom: 50px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  margin-bottom: 50px;
 }
 
 .infernal {
-    grid-column: 3/4;
-    grid-row: 5/6;
-    margin-bottom: 50px;
+  grid-column: 3/4;
+  grid-row: 5/6;
+  margin-bottom: 50px;
 }
 
 @media (min-width: 360px) {
-
 }
 
 @media (min-width: 800px) {
-    .main-content-area {
-        display: grid;
-        grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
-    }
+  .main-content-area {
+    display: grid;
+    grid-template-columns: 1fr 150px 150px 150px 150px 150px 1fr;
+  }
 
-    .topaz {
-        grid-column: 2/3;
-        grid-row: 1/2;
-    }
-    
-    .sapphire {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
-    
-    .emerald {
-        grid-column: 4/5;
-        grid-row: 1/2;
-    }
-    
-    .ruby {
-        grid-column: 5/6;
-        grid-row: 1/2;
-    }
-    
-    .diamond {
-        grid-column: 6/7;
-        grid-row: 1/2;
-    }
-    
-    .dragonstone {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
-    
-    .onyx {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
-    
-    .zenyte {
-        grid-column: 4/5;
-        grid-row: 2/3;
-    }
-    
-    .gamer {
-        grid-column: 5/6;
-        grid-row: 2/3;
-    }
-    
-    .infernal {
-        grid-column: 6/7;
-        grid-row: 2/3;
-    }
+  .topaz {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
+
+  .sapphire {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
+
+  .emerald {
+    grid-column: 4/5;
+    grid-row: 1/2;
+  }
+
+  .ruby {
+    grid-column: 5/6;
+    grid-row: 1/2;
+  }
+
+  .diamond {
+    grid-column: 6/7;
+    grid-row: 1/2;
+  }
+
+  .dragonstone {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  .onyx {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
+
+  .zenyte {
+    grid-column: 4/5;
+    grid-row: 2/3;
+  }
+
+  .gamer {
+    grid-column: 5/6;
+    grid-row: 2/3;
+  }
+
+  .infernal {
+    grid-column: 6/7;
+    grid-row: 2/3;
+  }
 }
 
 @media (min-width: 1000px) {
-
 }
 
 @media (min-width: 1750px) {
-
 }
 
 /*-----------------------------------------
@@ -508,116 +500,116 @@ RANK SPECIFIC REWARDS SECTION
 ------------------------------------------*/
 
 .rank-specific-rewards {
-    display: grid;
-    grid-template-columns: 1fr 360px 1fr;
-    grid-template-rows: 50px 100px 100px 100px;
-    gap: 30px;
-    padding-bottom: 30px;
-    overflow-x: hidden;
+  display: grid;
+  grid-template-columns: 1fr 360px 1fr;
+  grid-template-rows: 50px 100px 100px 100px;
+  gap: 30px;
+  padding-bottom: 30px;
+  overflow-x: hidden;
 }
 
 .rank-specific-rewards-title {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    font-size: 2em;
-    margin: 25px auto;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  font-size: 2em;
+  margin: 25px auto;
 }
 
 /*Ruby Nested Grid*/
 
 .ruby-rewards {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    display: grid;
-    grid-template-columns: 80px 280px;
-    grid-template-rows: 50px 50px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  display: grid;
+  grid-template-columns: 80px 280px;
+  grid-template-rows: 50px 50px;
 }
 
 .ruby-rank-img {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    height: 100px;
-    margin: auto;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  height: 100px;
+  margin: auto;
 }
 
 .ruby-rank-title {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: auto;
-    margin-bottom: 0;
-    color: rgb(255, 69, 69);
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: auto;
+  margin-bottom: 0;
+  color: rgb(255, 69, 69);
 }
 
 .ruby-rank-description {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 0;
-    margin-bottom: auto;
-    color: rgb(255, 69, 69);
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 0;
+  margin-bottom: auto;
+  color: rgb(255, 69, 69);
 }
 
 /*Diamond Nested Grid*/
 
 .diamond-rewards {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    display: grid;
-    grid-template-columns: 80px 280px;
-    grid-template-rows: 50px 50px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  display: grid;
+  grid-template-columns: 80px 280px;
+  grid-template-rows: 50px 50px;
 }
 
 .diamond-rank-img {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    height: 100px;
-    margin: auto;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  height: 100px;
+  margin: auto;
 }
 
 .diamond-rank-title {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    margin-top: auto;
-    margin-bottom: 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .diamond-rank-description {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    margin-top: 0;
-    margin-bottom: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
 /*Dragonstone Nested Grid*/
 
 .dragonstone-rewards {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    display: grid;
-    grid-template-columns: 80px 280px;
-    grid-template-rows: 50px 50px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  display: grid;
+  grid-template-columns: 80px 280px;
+  grid-template-rows: 50px 50px;
 }
 
 .dragonstone-rank-img {
-    grid-column: 1/2;
-    grid-row: 1/3;
-    height: 100px;
-    margin: auto;
+  grid-column: 1/2;
+  grid-row: 1/3;
+  height: 100px;
+  margin: auto;
 }
 
 .dragonstone-rank-title {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    color: blueviolet;
-    margin-top: auto;
-    margin-bottom: 0;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  color: blueviolet;
+  margin-top: auto;
+  margin-bottom: 0;
 }
 
 .dragonstone-rank-description {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    color: blueviolet;
-    margin-top: 0;
-    margin-bottom: auto;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  color: blueviolet;
+  margin-top: 0;
+  margin-bottom: auto;
 }
 
 /*-----------------------------------------
@@ -625,621 +617,616 @@ HOW TO GAIN POINTS SECTION
 ------------------------------------------*/
 
 .transition {
-    background: linear-gradient(black, blueviolet);
-    height: 100px;
+  background: linear-gradient(black, blueviolet);
+  height: 100px;
 }
 
 .how-to-get-points-section {
-    background-color: blueviolet;
-    color: black;
+  background-color: blueviolet;
+  color: black;
 }
 
 .gaining-points-title {
-    font-size: 3.3em;
-    padding: 30px;
-    text-align: center;
+  font-size: 3.3em;
+  padding: 30px;
+  text-align: center;
 }
 
 .ways-to-gain-points-list {
-    list-style-type: none;
-    display: grid;
-    grid-template-columns: 1fr 360px 1fr;
-    grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
-    gap: 30px;
-    padding-bottom: 100px;
+  list-style-type: none;
+  display: grid;
+  grid-template-columns: 1fr 360px 1fr;
+  grid-template-rows: 150px 150px 150px 150px 150px 150px 150px 150px 150px 150px;
+  gap: 30px;
+  padding-bottom: 100px;
 }
 
 /*Every 30 days Nested Grid*/
 
 .every-30-days {
-    grid-column: 2/3;
-    grid-row: 1/2;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .every-30-days-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .every-30-days-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .every-30-days-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Attending Nested Grid*/
 
 .attending-events {
-    grid-column: 2/3;
-    grid-row: 2/3;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .attending-events-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .attending-events-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .attending-events-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Recognizing Nested Grid*/
 
 .recognizing {
-    grid-column: 2/3;
-    grid-row: 3/4;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 3/4;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .recognizing-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .recognizing-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .recognizing-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Recognition Nested Grid*/
 
 .recognition {
-    grid-column: 2/3;
-    grid-row: 4/5;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 4/5;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .recognition-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .recognition-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .recognition-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Referring Nested Grid*/
 
 .referring {
-    grid-column: 2/3;
-    grid-row: 5/6;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 5/6;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .referring-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .referring-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .referring-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Staff Recognition Nested Grid*/
 
 .staff-recognition {
-    grid-column: 2/3;
-    grid-row: 6/7;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 6/7;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .staff-recognition-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .staff-recognition-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .staff-recognition-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Donating Nested Grid*/
 
 .donating {
-    grid-column: 2/3;
-    grid-row: 7/8;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 7/8;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .donating-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .donating-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .donating-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Hosting Events Nested Grid*/
 
 .hosting-events {
-    grid-column: 2/3;
-    grid-row: 8/9;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 8/9;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .hosting-events-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .hosting-events-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .hosting-events-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Ranks N Roles Nested Grid*/
 
 .ranks-n-roles {
-    grid-column: 2/3;
-    grid-row: 9/10;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 9/10;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .ranks-n-roles-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .ranks-n-roles-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .ranks-n-roles-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 /*Teacher Roles Nested Grid*/
 
 .teacher-roles {
-    grid-column: 2/3;
-    grid-row: 10/11;
-    background-color: black;
-    box-shadow: 8px 8px 15px black;
-    color: white;
-    border-radius: 20px;
-    display: grid;
-    grid-template-rows: 35px 80px 35px;
+  grid-column: 2/3;
+  grid-row: 10/11;
+  background-color: black;
+  box-shadow: 8px 8px 15px black;
+  color: white;
+  border-radius: 20px;
+  display: grid;
+  grid-template-rows: 35px 80px 35px;
 }
 
 .teacher-roles-title {
-    margin: auto;
-    font-size: 1.5em;
+  margin: auto;
+  font-size: 1.5em;
 }
 
 .teacher-roles-description {
-    margin: auto;
-    padding: 10px;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bold;
-    text-align: center;
-    letter-spacing: 1px;
-    font-size: 0.9em;
+  margin: auto;
+  padding: 10px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bold;
+  text-align: center;
+  letter-spacing: 1px;
+  font-size: 0.9em;
 }
 
 .teacher-roles-points {
-    font-size: 1.5em;
-    text-align: center;
-    background-color: rgb(46, 10, 80);
-    border-radius: 0px 0px 20px 20px ;
-    font-family: 'Raleway', sans-serif;
-    font-weight: bolder;
+  font-size: 1.5em;
+  text-align: center;
+  background-color: rgb(46, 10, 80);
+  border-radius: 0px 0px 20px 20px;
+  font-family: "Raleway", sans-serif;
+  font-weight: bolder;
 }
 
 @media (min-width: 360px) {
-
 }
 
 @media (min-width: 900px) {
-    .ways-to-gain-points-list {
-        list-style-type: none;
-        display: grid;
-        grid-template-columns: 1fr 400px 400px 1fr;
-        grid-template-rows: 150px 150px 150px 150px 150px;
-    }
+  .ways-to-gain-points-list {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: 1fr 400px 400px 1fr;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+  }
 
-    .every-30-days {
-        grid-column: 2/3;
-        grid-row: 1/2;  
-    }
+  .every-30-days {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 
-    .attending-events {
-        grid-column: 3/4;
-        grid-row: 1/2;
-    }
+  .attending-events {
+    grid-column: 3/4;
+    grid-row: 1/2;
+  }
 
-    .recognizing {
-        grid-column: 2/3;
-        grid-row: 2/3;
-    }
+  .recognizing {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
 
-    .recognition {
-        grid-column: 3/4;
-        grid-row: 2/3;
-    }
+  .recognition {
+    grid-column: 3/4;
+    grid-row: 2/3;
+  }
 
-    .referring {
-        grid-column: 2/3;
-        grid-row: 3/4;
-    }
+  .referring {
+    grid-column: 2/3;
+    grid-row: 3/4;
+  }
 
-    .staff-recognition {
-        grid-column: 3/4;
-        grid-row: 3/4;
-    }
+  .staff-recognition {
+    grid-column: 3/4;
+    grid-row: 3/4;
+  }
 
-    .donating {
-        grid-column: 2/3;
-        grid-row: 4/5;
-    }
+  .donating {
+    grid-column: 2/3;
+    grid-row: 4/5;
+  }
 
-    .hosting-events {
-        grid-column: 3/4;
-        grid-row: 4/5;
-    }
+  .hosting-events {
+    grid-column: 3/4;
+    grid-row: 4/5;
+  }
 
-    .ranks-n-roles {
-        grid-column: 2/3;
-        grid-row: 5/6;
-    }
+  .ranks-n-roles {
+    grid-column: 2/3;
+    grid-row: 5/6;
+  }
 
-    .teacher-roles {
-        grid-column: 3/4;
-        grid-row: 5/6;
-    }
+  .teacher-roles {
+    grid-column: 3/4;
+    grid-row: 5/6;
+  }
 }
 
 @media (min-width: 1000px) {
-
 }
 
 @media (min-width: 1750px) {
-
 }
-
 
 /*-----------------------------------------
 FOOTER SECTION
 ------------------------------------------*/
 
 .footer {
-    grid-row: 4 / 5;
-    grid-column: 1 / 4;
-    background-color: hsla(278, 98%, 18%, 1);
-    height: auto;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr;
-    align-items: center;
-    box-shadow: 0 -1px 15px rgb(54, 54, 54);
+  grid-row: 4 / 5;
+  grid-column: 1 / 4;
+  background-color: hsla(278, 98%, 18%, 1);
+  height: auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  align-items: center;
+  box-shadow: 0 -1px 15px rgb(54, 54, 54);
 }
 
-.discord-link img, .twitter-link img, .runewatch-link img, .wom-link img {
-    height: 40px;
-    margin-left: 5px;
+.discord-link img,
+.twitter-link img,
+.runewatch-link img,
+.wom-link img {
+  height: 40px;
+  margin-left: 5px;
 }
 
-.discord-link img:hover, .twitter-link img:hover, .runewatch-link img:hover, .wom-link img:hover {
-    opacity: 0.7;
+.discord-link img:hover,
+.twitter-link img:hover,
+.runewatch-link img:hover,
+.wom-link img:hover {
+  opacity: 0.7;
 }
 
 .footer-credits {
-    font-family: 'Sarabun' , sans-serif;
-    font-size: 0.9em;
-    padding: 10px;
-    color: rgb(221, 221, 221);
-    text-align: right;
-    width: auto;
+  font-family: "Sarabun", sans-serif;
+  font-size: 0.9em;
+  padding: 10px;
+  color: rgb(221, 221, 221);
+  text-align: right;
+  width: auto;
 }
-
-
-
 
 /*-----------------------------------------
 SCROLL ANIMATION FLY INS
 ------------------------------------------*/
 
 .hidden-left {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(-100%);
-    transition: all 1s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
 }
 
 .show-left {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .hidden-right {
-    opacity: 0;
-    filter: blur(5px);
-    transform: translateX(100%);
-    transition: all 1s;
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
 }
 
 .show-right {
-    opacity: 1;
-    filter: blur(0);
-    transform: translateX(0);
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }
 
 .topaz {
-    transition-delay: 100ms;
+  transition-delay: 100ms;
 }
 
 .sapphire {
-    transition-delay: 300ms;
+  transition-delay: 300ms;
 }
 
 .emerald {
-    transition-delay: 100ms;
+  transition-delay: 100ms;
 }
 
 .ruby {
-    transition-delay: 300ms;
+  transition-delay: 300ms;
 }
 
 .diamond {
-    transition-delay: 100ms;
+  transition-delay: 100ms;
 }
 
 .dragonstone {
-    transition-delay: 300ms;
+  transition-delay: 300ms;
 }
 
 .onyx {
-    transition-delay: 100ms;
+  transition-delay: 100ms;
 }
 
 .zenyte {
-    transition-delay: 300ms;
+  transition-delay: 300ms;
 }
 
 .gamer {
-    transition-delay: 100ms;
+  transition-delay: 100ms;
 }
 
 .infernal {
-    transition-delay: 300ms;
+  transition-delay: 300ms;
 }
-
 
 @media (min-width: 800px) {
-    .topaz {
-        transition-delay: 100ms;
-    }
-    
-    .sapphire {
-        transition-delay: 200ms;
-    }
-    
-    .emerald {
-        transition-delay: 300ms;
-    }
-    
-    .ruby {
-        transition-delay: 400ms;
-    }
-    
-    .diamond {
-        transition-delay: 500ms;
-    }
-    
-    .dragonstone {
-        transition-delay: 100ms;
-    }
-    
-    .onyx {
-        transition-delay: 200ms;
-    }
-    
-    .zenyte {
-        transition-delay: 300ms;
-    }
-    
-    .gamer {
-        transition-delay: 400ms;
-    }
-    
-    .infernal {
-        transition-delay: 500ms;
-    }
+  .topaz {
+    transition-delay: 100ms;
+  }
+
+  .sapphire {
+    transition-delay: 200ms;
+  }
+
+  .emerald {
+    transition-delay: 300ms;
+  }
+
+  .ruby {
+    transition-delay: 400ms;
+  }
+
+  .diamond {
+    transition-delay: 500ms;
+  }
+
+  .dragonstone {
+    transition-delay: 100ms;
+  }
+
+  .onyx {
+    transition-delay: 200ms;
+  }
+
+  .zenyte {
+    transition-delay: 300ms;
+  }
+
+  .gamer {
+    transition-delay: 400ms;
+  }
+
+  .infernal {
+    transition-delay: 500ms;
+  }
 }
-
-
-
