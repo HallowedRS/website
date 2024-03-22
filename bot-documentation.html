@@ -1,257 +1,257 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta
-      name="description"
-      content="Hallowed RS - An Old School Runescape Clan"
-    />
-    <meta
-      name="keywords"
-      content="Runescape, Old School Runescape, Hallowed RS, Clan"
-    />
-    <meta name="theme-color" content="#3a015b" />
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://www.hallowedrs.com" />
-    <meta property="og:title" content="Hallowed RS - Bot Documentation" />
-    <meta
-      property="og:description"
-      content="Hallowed RS - An Old School Runescape Clan"
-    />
-    <meta
-      property="og:image"
-      content="https://www.hallowedrs.com/Assets/BannerAnimationLogo.gif"
-    />
-    <meta name="twitter:card" content="summary_large_image" />
-    <title>Hallowed RS: Bot Docs</title>
-    <link
-      rel="shortcut icon"
-      href="Assets/HallowedDiscordIconWithAnimation.webp"
-      type="image/x-icon"
-    />
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta
+			name="description"
+			content="Hallowed RS - An Old School Runescape Clan"
+		/>
+		<meta
+			name="keywords"
+			content="Runescape, Old School Runescape, Hallowed RS, Clan"
+		/>
+		<meta name="theme-color" content="#3a015b" />
+		<meta property="og:type" content="website" />
+		<meta property="og:url" content="https://www.hallowedrs.com" />
+		<meta property="og:title" content="Hallowed RS - Bot Documentation" />
+		<meta
+			property="og:description"
+			content="Hallowed RS - An Old School Runescape Clan"
+		/>
+		<meta
+			property="og:image"
+			content="https://www.hallowedrs.com/Assets/BannerAnimationLogo.gif"
+		/>
+		<meta name="twitter:card" content="summary_large_image" />
+		<title>Hallowed RS: Bot Docs</title>
+		<link
+			rel="shortcut icon"
+			href="Assets/HallowedDiscordIconWithAnimation.webp"
+			type="image/x-icon"
+		/>
 
-    <link rel="stylesheet" href="bot-doc-style.css" />
+		<link rel="stylesheet" href="bot-doc-style.css" />
 
-    <script src="script.js" defer></script>
+		<script src="script.js" defer></script>
 
-    <!--Google Fonts 'Rowdies' - to specify in CSS 'font-family: 'Rowdies', cursive;'-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap"
-      rel="stylesheet"
-    />
+		<!--Google Fonts 'Rowdies' - to specify in CSS 'font-family: 'Rowdies', cursive;'-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rowdies&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!--Google Fonts 'ASAP' - to specify in CSS 'font-family: 'Asap' , sans-serif;'-->
-    <link
-      href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Inconsolata:400,700"
-      rel="stylesheet"
-    />
+		<!--Google Fonts 'ASAP' - to specify in CSS 'font-family: 'Asap' , sans-serif;'-->
+		<link
+			href="https://fonts.googleapis.com/css?family=Asap:400,500,700|Inconsolata:400,700"
+			rel="stylesheet"
+		/>
 
-    <!--Google Fonts 'Sarabun' - to specify in CSS 'font-family: 'Sarabun', sans-serif;'-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Rowdies&family=Sarabun:wght@600&display=swap"
-      rel="stylesheet"
-    />
+		<!--Google Fonts 'Sarabun' - to specify in CSS 'font-family: 'Sarabun', sans-serif;'-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Rowdies&family=Sarabun:wght@600&display=swap"
+			rel="stylesheet"
+		/>
 
-    <!--Google Fonts 'Raleway' - to specify in CSS 'font-family: 'Raleway', sans-serif;''-->
-    <link
-      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rowdies&family=Sarabun:wght@600&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body>
-    <!-- Navigation Section -->
-    <nav class="navigation">
-      <a href="index.html" class="logo-a"
-        ><img class="logo" src="Assets/HallowedH.webp" alt="Hallowed RS Logo"
-      /></a>
-      <div
-        data-visible="false"
-        class="mobile-menu-toggle"
-        alt="click for mobile menu"
-      ></div>
-      <!-- Navigation List -->
-      <ul class="desktop-nav-list-ul">
-        <a class="nav-list-a nav-list-li-1" href="about-us.html"
-          ><li class="nav-list-li">About Us</li></a
-        >
-        <a class="nav-list-a nav-list-li-2" href="piety-points.html"
-          ><li class="nav-list-li">Piety Points</li></a
-        >
-        <a class="nav-list-a nav-list-li-3" href="bot-documentation.html"
-          ><li class="nav-list-li">Bot Documentation</li></a
-        >
-        <a
-          class="nav-list-a nav-list-li-4"
-          target="_blank"
-          href="https://www.discord.gg/hallowedrs"
-          ><li class="nav-list-li">Join Now!</li></a
-        >
-      </ul>
-    </nav>
-    <ul data-visible="false" class="mobile-nav-list-ul">
-      <a class="nav-list-a" href="about-us.html"
-        ><li class="nav-list-li">About Us</li></a
-      >
-      <a class="nav-list-a" href="piety-points.html"
-        ><li class="nav-list-li">Piety Points</li></a
-      >
-      <a class="nav-list-a" href="bot-documentation.html"
-        ><li class="nav-list-li">Bot Documentation</li></a
-      >
-      <a
-        class="nav-list-a"
-        target="_blank"
-        href="https://www.discord.gg/hallowedrs"
-        ><li class="nav-list-li">Join Now!</li></a
-      >
-      <a
-        target="_blank"
-        href="https://www.discord.gg/hallowedrs"
-        rel="noopener noreferrer"
-        class="mobile-menu-discord-link"
-        ><img
-          class="mobile-menu-img"
-          src="Assets/DiscordLogoBlack.web"
-          alt="Discord"
-      /></a>
-      <a
-        target="_blank"
-        href="https://www.twitter.com/Hallowed_RS"
-        rel="noopener noreferrer"
-        class="mobile-menu-twitter-link"
-      >
-        <img
-          class="mobile-menu-img"
-          src="Assets/TwitterXLogoBlack.webp"
-          alt="Twitter"
-      /></a>
-      <a
-        target="_blank"
-        href="https://www.wiseoldman.net/groups/2809"
-        rel="noopener noreferrer"
-        class="mobile-menu-wom-link"
-      >
-        <img
-          class="mobile-menu-img"
-          src="Assets/WOMlogoBlack.webp"
-          alt="Wise Old Man"
-      /></a>
-      <a
-        target="_blank"
-        href="https://runewatch.com/"
-        rel="noopener noreferrer"
-        class="mobile-menu-runewatch-link"
-      >
-        <img
-          class="mobile-menu-img"
-          src="Assets/RunewatchLogoBlack.webp"
-          alt="Runewatch"
-      /></a>
-    </ul>
-    <div data-visible="false" class="see-through-nav-section"></div>
+		<!--Google Fonts 'Raleway' - to specify in CSS 'font-family: 'Raleway', sans-serif;''-->
+		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Rowdies&family=Sarabun:wght@600&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<!-- Navigation Section -->
+		<nav class="navigation">
+			<a href="index.html" class="logo-a"
+				><img class="logo" src="Assets/HallowedH.webp" alt="Hallowed RS Logo"
+			/></a>
+			<div
+				data-visible="false"
+				class="mobile-menu-toggle"
+				alt="click for mobile menu"
+			></div>
+			<!-- Navigation List -->
+			<ul class="desktop-nav-list-ul">
+				<a class="nav-list-a nav-list-li-1" href="about-us.html"
+					><li class="nav-list-li">About Us</li></a
+				>
+				<a class="nav-list-a nav-list-li-2" href="piety-points.html"
+					><li class="nav-list-li">Piety Points</li></a
+				>
+				<a class="nav-list-a nav-list-li-3" href="bot-documentation.html"
+					><li class="nav-list-li">Bot Documentation</li></a
+				>
+				<a
+					class="nav-list-a nav-list-li-4"
+					target="_blank"
+					href="https://www.discord.gg/hallowedrs"
+					><li class="nav-list-li">Join Now!</li></a
+				>
+			</ul>
+		</nav>
+		<ul data-visible="false" class="mobile-nav-list-ul">
+			<a class="nav-list-a" href="about-us.html"
+				><li class="nav-list-li">About Us</li></a
+			>
+			<a class="nav-list-a" href="piety-points.html"
+				><li class="nav-list-li">Piety Points</li></a
+			>
+			<a class="nav-list-a" href="bot-documentation.html"
+				><li class="nav-list-li">Bot Documentation</li></a
+			>
+			<a
+				class="nav-list-a"
+				target="_blank"
+				href="https://www.discord.gg/hallowedrs"
+				><li class="nav-list-li">Join Now!</li></a
+			>
+			<a
+				target="_blank"
+				href="https://www.discord.gg/hallowedrs"
+				rel="noopener noreferrer"
+				class="mobile-menu-discord-link"
+				><img
+					class="mobile-menu-img"
+					src="Assets/DiscordLogoBlack.web"
+					alt="Discord"
+			/></a>
+			<a
+				target="_blank"
+				href="https://www.twitter.com/Hallowed_RS"
+				rel="noopener noreferrer"
+				class="mobile-menu-twitter-link"
+			>
+				<img
+					class="mobile-menu-img"
+					src="Assets/TwitterXLogoBlack.webp"
+					alt="Twitter"
+			/></a>
+			<a
+				target="_blank"
+				href="https://www.wiseoldman.net/groups/2809"
+				rel="noopener noreferrer"
+				class="mobile-menu-wom-link"
+			>
+				<img
+					class="mobile-menu-img"
+					src="Assets/WOMlogoBlack.webp"
+					alt="Wise Old Man"
+			/></a>
+			<a
+				target="_blank"
+				href="https://runewatch.com/"
+				rel="noopener noreferrer"
+				class="mobile-menu-runewatch-link"
+			>
+				<img
+					class="mobile-menu-img"
+					src="Assets/RunewatchLogoBlack.webp"
+					alt="Runewatch"
+			/></a>
+		</ul>
+		<div data-visible="false" class="see-through-nav-section"></div>
 
-    <header class="header">
-      <img src="Assets/Darkmeyer.webp" alt="Darkmeyer" class="bot-doc-hero" />
-      <h1 class="bot-doc-title">Bot Documentation</h1>
-    </header>
+		<header class="header">
+			<img src="Assets/Darkmeyer.webp" alt="Darkmeyer" class="bot-doc-hero" />
+			<h1 class="bot-doc-title">Bot Documentation</h1>
+		</header>
 
-    <section class="description-section">
-      <p class="bot-doc-description">
-        Hallowed RS Utilities is a
-        <span class="purple-text">bespoke</span> Discord bot developed
-        exclusively for the Old School RuneScape Clan, Hallowed RS. It offers a
-        set of tailored tools designed to streamline and enhance the management
-        of clan-specific functionalities. This bot is meticulously crafted for
-        the Hallowed RS clan's needs and is not designed for broad usage.
-      </p>
-      <p class="bot-doc-contact">
-        Although Hallowed RS Utilities is a proprietary bot and only Senior
-        Staff have access to its source code, we deeply appreciate and value
-        community input. If you possess ideas for enhancements or innovative
-        features, please reach out directly to @connorfield via Discord or
-        GitHub. <br /><br />
-        Hallowed RS Utilities is a protected project, exclusive to Hallowed RS.
-        All rights reserved.
-      </p>
-    </section>
+		<section class="description-section">
+			<p class="bot-doc-description">
+				Hallowed RS Utilities is a
+				<span class="purple-text">bespoke</span> Discord bot developed
+				exclusively for the Old School RuneScape Clan, Hallowed RS. It offers a
+				set of tailored tools designed to streamline and enhance the management
+				of clan-specific functionalities. This bot is meticulously crafted for
+				the Hallowed RS clan's needs and is not designed for broad usage.
+			</p>
+			<p class="bot-doc-contact">
+				Although Hallowed RS Utilities is a proprietary bot and only Senior
+				Staff have access to its source code, we deeply appreciate and value
+				community input. If you possess ideas for enhancements or innovative
+				features, please reach out directly to @connorfield via Discord or
+				GitHub. <br /><br />
+				Hallowed RS Utilities is a protected project, exclusive to Hallowed RS.
+				All rights reserved.
+			</p>
+		</section>
 
-    <main class="main-content-area">
-      <div class="points-list">
-        <h3 class="grid-title">List Points</h3>
-        <img
-          src="Assets/bot-doc-points-list.webp"
-          alt="how to view points"
-          class="bot-doc-gif"
-        />
-        <p class="grid-description">
-          Allows any clan member to view their points, or the points of another
-          member.
-        </p>
-      </div>
-      <div class="points-add">
-        <h3 class="grid-title">Add Points</h3>
-        <img
-          src="Assets/bot-doc-points-add.webp"
-          alt="how to add points"
-          class="bot-doc-gif"
-        />
-        <p class="grid-description">
-          Empowers our staff members to credit Piety points to a clan member.
-        </p>
-      </div>
-      <div class="points-remove">
-        <h3 class="grid-title">Remove Points</h3>
-        <img
-          src="Assets/bot-doc-points-remove.webp"
-          alt="how to remove points"
-          class="bot-doc-gif"
-        />
-        <p class="grid-description">
-          Enables Senior Staff to subtract Piety points from any member.
-        </p>
-      </div>
-    </main>
+		<main class="main-content-area">
+			<div class="points-list">
+				<h3 class="grid-title">List Points</h3>
+				<img
+					src="Assets/bot-doc-points-list.webp"
+					alt="how to view points"
+					class="bot-doc-gif"
+				/>
+				<p class="grid-description">
+					Allows any clan member to view their points, or the points of another
+					member.
+				</p>
+			</div>
+			<div class="points-add">
+				<h3 class="grid-title">Add Points</h3>
+				<img
+					src="Assets/bot-doc-points-add.webp"
+					alt="how to add points"
+					class="bot-doc-gif"
+				/>
+				<p class="grid-description">
+					Empowers our staff members to credit Piety points to a clan member.
+				</p>
+			</div>
+			<div class="points-remove">
+				<h3 class="grid-title">Remove Points</h3>
+				<img
+					src="Assets/bot-doc-points-remove.webp"
+					alt="how to remove points"
+					class="bot-doc-gif"
+				/>
+				<p class="grid-description">
+					Enables Senior Staff to subtract Piety points from any member.
+				</p>
+			</div>
+		</main>
 
-    <footer class="footer">
-      <div class="footer-icons">
-        <a
-          target="_blank"
-          href="https://www.discord.gg/hallowedrs"
-          rel="noopener noreferrer"
-          class="discord-link"
-          ><img src="Assets/DiscordLogoBlack.web" alt="Discord"
-        /></a>
-        <a
-          target="_blank"
-          href="https://www.twitter.com/Hallowed_RS"
-          rel="noopener noreferrer"
-          class="twitter-link"
-        >
-          <img src="Assets/TwitterXLogoBlack.webp" alt="Twitter"
-        /></a>
-        <a
-          target="_blank"
-          href="https://www.wiseoldman.net/groups/2809"
-          rel="noopener noreferrer"
-          class="wom-link"
-        >
-          <img src="Assets/WOMlogoBlack.webp" alt="Wise Old Man"
-        /></a>
-        <a
-          target="_blank"
-          href="https://runewatch.com/"
-          rel="noopener noreferrer"
-          class="runewatch-link"
-        >
-          <img src="Assets/RunewatchLogoBlack.webp" alt="Runewatch"
-        /></a>
-      </div>
-      <div class="footer-credits">
-        <span class="footer-credits">
-          Website Created by Jordan.Fozzie &copy; 2023</span
-        >
-      </div>
-    </footer>
-  </body>
+		<footer class="footer">
+			<div class="footer-icons">
+				<a
+					target="_blank"
+					href="https://www.discord.gg/hallowedrs"
+					rel="noopener noreferrer"
+					class="discord-link"
+					><img src="Assets/DiscordLogoBlack.web" alt="Discord"
+				/></a>
+				<a
+					target="_blank"
+					href="https://www.twitter.com/Hallowed_RS"
+					rel="noopener noreferrer"
+					class="twitter-link"
+				>
+					<img src="Assets/TwitterXLogoBlack.webp" alt="Twitter"
+				/></a>
+				<a
+					target="_blank"
+					href="https://www.wiseoldman.net/groups/2809"
+					rel="noopener noreferrer"
+					class="wom-link"
+				>
+					<img src="Assets/WOMlogoBlack.webp" alt="Wise Old Man"
+				/></a>
+				<a
+					target="_blank"
+					href="https://runewatch.com/"
+					rel="noopener noreferrer"
+					class="runewatch-link"
+				>
+					<img src="Assets/RunewatchLogoBlack.webp" alt="Runewatch"
+				/></a>
+			</div>
+			<div class="footer-credits">
+				<span class="footer-credits">
+					Website Created by Jordan.Fozzie &copy; 2023</span
+				>
+			</div>
+		</footer>
+	</body>
 </html>
