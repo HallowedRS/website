@@ -677,6 +677,13 @@ MAIN CONTENT SECTION
 			);
 	}
 
+	.admin-section {
+		grid-template-columns: minmax(50px, 400px) minmax(50px, 400px) minmax(
+				50px,
+				400px
+			);
+	}
+
 	.leader-name {
 		font-size: 40px;
 	}
